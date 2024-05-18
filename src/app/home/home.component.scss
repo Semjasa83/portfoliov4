@@ -2,9 +2,20 @@
 
 :host {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100vh;
   width: 100vw;
   background-color: $background-color;
   color: $background-contrast-color;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  router-outlet {
+    height: 100%;
+    width: 100%;
+  }
 }

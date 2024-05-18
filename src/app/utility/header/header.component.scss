@@ -1,6 +1,11 @@
-// :host {
-//   height: 7vh;
-// }
+@import "../../../assets/scss/variables.scss";
+
+:host {
+    height: 5vh;
+    width: 100%;
+    background-color: $surface-color;
+
+}
 
 // .navbar-wrapper {
 //   position: relative;
@@ -36,7 +41,6 @@
 //       }
 //     }
 
-
 //     :first-child {
 //       border-right: none;
 //     }
@@ -54,7 +58,3 @@
 
 //   }
 // }
-
-
-
-

@@ -1,0 +1,50 @@
+@import '../../../assets/scss/variables.scss';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: fit-content;
+    align-items: center;
+    background-color: $surface-color;
+    color: $surface-contrast-color;
+    border-right: 1px solid $surface-contrast-transparent-color;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.icon-fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 0;
+    height: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 3rem;
+}
