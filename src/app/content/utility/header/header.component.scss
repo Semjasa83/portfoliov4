@@ -1,59 +1,59 @@
-:host {
-  height: 7vh;
-}
+// :host {
+//   height: 7vh;
+// }
 
-.navbar-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  border-top: 1px solid #666666;
-  border-bottom: 1px solid #666666;
-  .nav-name {
-    border-left: none;
-    border-right: none;
-    width: 20vw;
-    padding: 0 2rem;
-  }
-  .navbar {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
+// .navbar-wrapper {
+//   position: relative;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-start;
+//   align-items: center;
+//   height: 100%;
+//   width: 100%;
+//   border-top: 1px solid #666666;
+//   border-bottom: 1px solid #666666;
+//   .nav-name {
+//     border-left: none;
+//     border-right: none;
+//     width: 20vw;
+//     padding: 0 2rem;
+//   }
+//   .navbar {
+//     display: flex;
+//     justify-content: flex-start;
+//     flex-direction: row;
+//     align-items: center;
 
-    .nav-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 8.5rem;
-      height: 7vh;
-      border-left: 1px solid #666666;
-      &:hover {
-        background-color: red;
-      }
-    }
+//     .nav-button {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       width: 8.5rem;
+//       height: 7vh;
+//       border-left: 1px solid #666666;
+//       &:hover {
+//         background-color: red;
+//       }
+//     }
 
 
-    :first-child {
-      border-right: none;
-    }
+//     :first-child {
+//       border-right: none;
+//     }
 
-    :nth-child(3) {
-      border-right: 1px solid #666666;
-    }
+//     :nth-child(3) {
+//       border-right: 1px solid #666666;
+//     }
 
-    :last-child {
-      position: absolute;
-      right: 0;
-      border-left: 1px solid #666666;
-      border-right: none;
-    }
+//     :last-child {
+//       position: absolute;
+//       right: 0;
+//       border-left: 1px solid #666666;
+//       border-right: none;
+//     }
 
-  }
-}
+//   }
+// }
 
 
 

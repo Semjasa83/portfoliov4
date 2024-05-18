@@ -7,11 +7,13 @@ import { HelloComponent } from './content/hello/hello.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'hello', component: HelloComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent },
-
+  { path: 'home', component: HomeComponent,
+    children: [
+      { path: 'hello', component: HelloComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'projects', component: ProjectsComponent },
+      { path: 'contact', component: ContactComponent },
+    ]
+  },
   { path: '**', redirectTo: '404' }
 ];
