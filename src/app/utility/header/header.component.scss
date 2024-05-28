@@ -1,60 +1,69 @@
 @import "../../../assets/scss/variables.scss";
 
 :host {
-    height: 5vh;
-    width: 100%;
-    background-color: $surface-color;
-
+  display: flex;
+  height: 4vh;
+  width: 100%;
+  background-color: $surface-color;
+  border-bottom: 1px solid $surface-contrast-transparent-color;
 }
 
-// .navbar-wrapper {
-//   position: relative;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: flex-start;
-//   align-items: center;
-//   height: 100%;
-//   width: 100%;
-//   border-top: 1px solid #666666;
-//   border-bottom: 1px solid #666666;
-//   .nav-name {
-//     border-left: none;
-//     border-right: none;
-//     width: 20vw;
-//     padding: 0 2rem;
-//   }
-//   .navbar {
-//     display: flex;
-//     justify-content: flex-start;
-//     flex-direction: row;
-//     align-items: center;
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+/*  height: 100%;*/
+  width: 100%;
+}
 
-//     .nav-button {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       width: 8.5rem;
-//       height: 7vh;
-//       border-left: 1px solid #666666;
-//       &:hover {
-//         background-color: red;
-//       }
-//     }
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 
-//     :first-child {
-//       border-right: none;
-//     }
+  .nav-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.9rem;
+    color: $surface-contrast-color;
+    border-top: 1px solid $surface-color;
+    border-right: 1px solid $surface-contrast-transparent-color;
+    height: fit-content;
+    &:hover {
+      border-top: 1px solid $primary-color;
+    }
+    .icon-wrapper {
+      height: 1.25rem;
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0.2rem;
+      .css {
+        height: 1.25rem;
+      }
+      .html {
+        height: 1rem;
+      }
+      .json {
+        height: 1rem;
+      }
+      .typescript {
+        height: 1rem;
+      }
+      .javascript {
+        height: 1rem;
+      }
+      .md {
+        height: 1rem;
+      }
+      .icon {
+        object-fit: contain;
+        width: fit-content;
+      }
+    }
 
-//     :nth-child(3) {
-//       border-right: 1px solid #666666;
-//     }
-
-//     :last-child {
-//       position: absolute;
-//       right: 0;
-//       border-left: 1px solid #666666;
-//       border-right: none;
-//     }
-
-//   }
-// }
+  }
+}
