@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 import {RouterLink, RouterLinkActive} from "@angular/router";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
     imports: [
         NgOptimizedImage,
         RouterLink,
-        RouterLinkActive
+        RouterLinkActive,
+        TranslateModule
     ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

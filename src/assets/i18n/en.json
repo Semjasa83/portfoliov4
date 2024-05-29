@@ -1,0 +1,32 @@
+{
+  "Main": {
+    "About": {},
+    "Contact": {},
+    "Hello": {},
+    "Projects": {}
+  },
+
+  "Utility": {
+
+    "Explorer": {
+      "Headline": "Explorer",
+      "SubHeadline": "Portfolio_V4"
+    },
+
+    "Navigation": {
+      "Hello": "_hello.scss",
+      "AboutMe": "_about-me.html",
+      "Projects": "_projects.json",
+      "ContactMe": "_contact-me.ts",
+      "GitHub": "_github.js",
+      "LinkedIn": "_linkedin.md"
+    },
+
+    "Footer": {
+      "GitHub": "_github",
+      "LinkedIn": "_linkedin",
+      "Imprint": "_imprint",
+      "Privacy": "_privacy"
+    }
+  }
+}
