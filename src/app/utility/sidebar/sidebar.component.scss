@@ -23,24 +23,30 @@
 
 .icon {
   align-items: center;
-  cursor: pointer;
   display: flex;
   height: 2rem;
   justify-content: center;
   padding: 0.5rem 0;
   transition: background-color 0.3s;
   width: 100%;
+  &:hover {
+    background-color: $surface-contrast-transparent-color;
+    cursor: pointer;
+  }
 }
 
 .icon-fa {
     align-items: center;
-    cursor: pointer;
     display: flex;
     height: 1.5rem;
     justify-content: center;
     padding: 0.75rem 0;
     transition: background-color 0.3s;
     width: 100%;
+    &:hover {
+      background-color: $surface-contrast-transparent-color;
+      cursor: pointer;
+  }
 }
 
 .sidebar-content-wrapper {
@@ -48,4 +54,8 @@
     display: flex;
     flex-direction: column;
     width: 3rem;
+}
+
+.active {
+  background-color: $surface-contrast-transparent-color;
 }

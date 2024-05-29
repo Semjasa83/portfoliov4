@@ -1,23 +1,52 @@
 <div class="explorer-space-wrapper">
+  <div class="explorer-headline-index">
     <div class="headline">Explorer</div>
-    <div class="explorer-headline">
+    <div class="explorer-headline-wrapper">
         <span class="material-symbols-outlined icon">
             keyboard_arrow_down
         </span>
-        <span>Portfolio_V4</span>
-        <div>
-          <span class="item-explorer">
-
-          </span>
-          <span class="item-explorer">
-
-          </span>
-          <span class="item-explorer">
-
-          </span>
-          <span class="item-explorer">
-
-          </span>
-        </div>
+      <span class="explorer-headline">Portfolio_V4</span>
     </div>
+
+    <div class="explorer-tree">
+      <div class="item-explorer" routerLink="hello" routerLinkActive="active">
+        <div class="icon-wrapper">
+          <img alt="css-icon" class="css icon" height="96" ngSrc="././assets/icons/css.png" width="96">
+        </div>
+        <span>_hello.scss</span>
+      </div>
+      <div class="item-explorer" routerLink="about" routerLinkActive="active">
+        <div class="icon-wrapper">
+          <img alt="html-icon" class="html icon" height="96" ngSrc="././assets/icons/html.png" width="85">
+        </div>
+        <span>_about-me.html</span>
+      </div>
+      <div class="item-explorer" routerLink="projects" routerLinkActive="active">
+        <div class="icon-wrapper">
+          <img alt="json-icon" class="json icon" height="64" ngSrc="././assets/icons/json.png" width="64">
+        </div>
+        <span>_projects.json</span>
+      </div>
+      <div class="item-explorer" routerLink="contact" routerLinkActive="active">
+        <div class="icon-wrapper">
+          <img alt="typescript-icon" class="typescript icon" height="69" ngSrc="././assets/icons/typescript.png"
+               width="96">
+        </div>
+        <span>_contact-me.ts</span>
+      </div>
+      <div class="item-explorer"> <!--<href target="_blank" rel="noopener noreferrer" -->
+        <div class="icon-wrapper">
+          <img alt="javascript-icon" class="javascript icon" height="96" ngSrc="././assets/icons/javascript.png"
+               width="96">
+        </div>
+        <span>_gitHub.js</span>
+      </div>
+      <div class="item-explorer"> <!--<href target="_blank" rel="noopener noreferrer" -->
+        <div class="icon-wrapper">
+          <img alt="mg-icon" class="md icon" height="64" ngSrc="././assets/icons/md.png" width="64">
+        </div>
+        <span>_linkedIn.md</span>
+      </div>
+    </div>
+  </div>
 </div>
