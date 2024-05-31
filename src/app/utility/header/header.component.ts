@@ -17,4 +17,5 @@ import {TranslateModule} from "@ngx-translate/core";
 })
 export class HeaderComponent {
 
+  constructor() {}
 }

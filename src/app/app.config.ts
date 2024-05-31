@@ -12,7 +12,7 @@ export const appConfig: ApplicationConfig = {
       defaultLanguage: 'en',
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
+        useFactory: (HttpLoaderFactory),
         deps: [HttpClient]
       }
     }))],
