@@ -2,7 +2,7 @@
   "Main": {
     "About": {},
     "Contact": {},
-    "Hello": {},
+    "Home": {},
     "Projects": {}
   },
 
@@ -14,7 +14,7 @@
     },
 
     "Navigation": {
-      "Hello": "_hello.scss",
+      "Home": "_home.scss",
       "AboutMe": "_about-me.html",
       "Projects": "_projects.json",
       "ContactMe": "_contact-me.ts",
