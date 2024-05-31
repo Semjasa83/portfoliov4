@@ -62,6 +62,10 @@
     display: flex;
     padding: 0.5rem 0 0.5rem 0;
 
+    &:not(.active) {
+      border-left: 1px solid $surface-color;
+    }
+
     &:hover {
       background-color: $surface-contrast-transparent-color;
       color: $surface-contrast-color;
