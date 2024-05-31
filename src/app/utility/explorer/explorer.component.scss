@@ -9,7 +9,7 @@
   flex-direction: column;
   height: 100%;
   min-width: fit-content;
-  width: 15vw;
+  width: 13rem;
 }
 
 .explorer-space-wrapper {
@@ -53,6 +53,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  color: $surface-contrast-transparent-color;
+  border-left: 1px solid $surface-color;
 
   .item-explorer {
     height: 1.25rem;
@@ -62,6 +64,8 @@
 
     &:hover {
       background-color: $surface-contrast-transparent-color;
+      color: $surface-contrast-color;
+      border-left: 1px solid $surface-contrast-color;
       cursor: pointer;
     }
 
@@ -106,4 +110,6 @@
 
 .active {
   background-color: $surface-contrast-transparent-color;
+  color: $surface-contrast-color;
+  border-left: 1px solid $primary-color;
 }

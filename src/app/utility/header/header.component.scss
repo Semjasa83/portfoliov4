@@ -2,7 +2,7 @@
 
 :host {
   display: flex;
-  height: 3vh;
+  height: fit-content;
   width: 100%;
   background-color: $surface-color;
   border-bottom: 1px solid $surface-contrast-transparent-color;
@@ -26,11 +26,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.7rem 1rem;
+    padding: 0.75rem 1rem;
     color: $surface-contrast-color;
     border-top: 2px solid $surface-color;
     border-right: 1px solid $surface-contrast-transparent-color;
     height: fit-content;
+    min-width: 8rem;
+    width: fit-content;
 
     &:hover {
       cursor: pointer;

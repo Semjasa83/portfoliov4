@@ -1,0 +1,47 @@
+@import "../../../assets/scss/variables.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.hello-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 95%;
+  }
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: calc(100vh / 3);
+  width: calc(100vh / 3);
+  border-radius: 50%;
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 10%;
+  }
+}
+
+
