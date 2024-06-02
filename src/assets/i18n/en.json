@@ -1,10 +1,14 @@
 {
   "Main": {
     "Home": {
+      "BackgroundTop": "Web & Angular",
+      "BackgroundBottom": "Developer",
       "Iam": "I am",
       "Name": "Marcel de Zanna",
-      "Title": "Frontend Developer",
-      "Description": "and this is my portfolio."
+      "Title": "Frontend Web Developer",
+      "Description": "and this is my portfolio.",
+      "ButtonWork": "View Work",
+      "ButtonContact": "Contact Me"
     },
     "About": {},
     "Contact": {},

@@ -1,4 +1,6 @@
 @import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/fira_fonts.scss";
+@import "../../../assets/scss/roboto_fonts.scss";
 
 :host {
   display: flex;
@@ -7,9 +9,13 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  font-family: 'Fira Code', sans-serif;
+  font-style: normal;
+  overflow: hidden;
 }
 
-.hello-wrapper {
+.home-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,31 +23,56 @@
   height: 100%;
   width: 100%;
 
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 95%;
-    width: 95%;
-  }
+  // .content-wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   height: 95%;
+  //   width: 95%;
+  // }
 }
 
-.img-wrapper {
+.bgr-txt-wrapper {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 0;
+  bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: calc(100vh / 3);
-  width: calc(100vh / 3);
-  border-radius: 50%;
+  align-items: flex-start;
+  z-index: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 
-  img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50% 10%;
+  .bgr-txt {
+    font-size: 14rem;
+    font-weight: 700;
+    color: $surface-contrast-transparent-color;
+    opacity: 0.1;
   }
 }
 
+.front-txt-wrapper {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  .front-txt-top {
+    font-size: 4rem;
+    font-weight: 400;
+    color: $background-contrast-color;
+  }
+  .front-txt-bottom {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $background-contrast-color;
+    border-right: 2px solid $primary-color;
+    padding-right: 1rem;
+  }
+}
 
