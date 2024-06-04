@@ -1,24 +1,153 @@
-$primary-color: #AAD94C;
-$primary-contrast-color: #0D1017;
+$primary-color: #aad94c;
+$primary-contrast-color: #0d1017;
+$primary-txt-color: #aad94c;
+$primary-txt-contrast-color: #0d1017;
 
-$secondary-color: #39BAE6;
-$secondary-contrast-color: #0D1017;
-
-$secondary-pulse-color:  #39BAE6AA;
+$secondary-color: #39bae6;
+$secondary-contrast-color: #0d1017;
+$secondary-txt-color: #39bae6;
+$secondary-txt-contrast-color: #0d1017;
 
 $surface-color: #131822;
-$surface-contrast-color: #BFBDB6;
-$surface-contrast-transparent-color: #BFBDB644;
+$surface-contrast-color: #bfbdb6;
+$surface-contrast-transparent-color: #bfbdb644;
+$surface-txt-color: #131822;
+$surface-txt-contrast-color: #bfbdb6;
+$surface-txt-contrast-transparent-color: #bfbdb644;
 
-$background-color: #0D1017;
-$background-contrast-color: #BFBDB6;
+$background-color: #0d1017;
+$background-contrast-color: #bfbdb6;
+$background-txt-color: #0d1017;
+$background-txt-contrast-color: #bfbdb6;
 
-$success-color: #7FD962;
-$success-contrast-color: #0D1017;
+$success-color: #7fd962;
+$success-contrast-color: #0d1017;
+$success-txt-color: #7fd962;
+$success-txt-contrast-color: #0d1017;
 
-$warning-color: #FFB454;
-$warning-contrast-color: #0D1017;
+$warning-color: #ffb454;
+$warning-contrast-color: #0d1017;
+$warning-txt-color: #ffb454;
+$warning-txt-contrast-color: #0d1017;
 
-$error-color: #F26D78;
-$error-contrast-color: #0D1017;
+$error-color: #f26d78;
+$error-contrast-color: #0d1017;
+$error-txt-color: #f26d78;
+$error-txt-contrast-color: #0d1017;
 
+$secondary-pulse-color: #39bae6aa;
+
+$button-color: #aad94c;
+$button-contast-color: #0d1017;
+$button-txt-color: #aad94c;
+$button-txt-contrast-color: #0d1017;
+
+
+/* ---- global background-colors ---- */
+.primary-color {
+    background-color: $primary-color;
+}
+.primary-contrast-color {
+    background-color: $primary-contrast-color;
+}
+.secondary-color {
+    background-color: $secondary-color;
+}
+.secondary-contrast-color {
+    background-color: $secondary-contrast-color;
+}
+.surface-color {
+    background-color: $surface-color;
+}
+.surface-contrast-color {
+    background-color: $surface-contrast-color;
+}
+.surface-contrast-transparent-color {
+    background-color: $surface-contrast-transparent-color;
+}
+.secondary-pulse-color {
+    background-color: $secondary-pulse-color;
+}
+.background-color {
+    background-color: $background-color;
+}
+.background-contrast-color {
+    background-color: $background-contrast-color;
+}
+.success-color {
+    background-color: $success-color;
+}
+.success-contrast-color {
+    background-color: $success-contrast-color;
+}
+.warning-color {
+    background-color: $warning-color;
+}
+.warning-contrast-color {
+    background-color: $warning-contrast-color;
+}
+.error-color {
+    background-color: $error-color;
+}
+.error-contrast-color {
+    background-color: $error-contrast-color;
+}
+.button-color {
+    background-color: $button-color;
+}
+.button-contrast-color{
+    background-color: $button-contast-color;
+}
+
+/* ---- global txt-color ---- */
+.primary-txt-color {
+    color: $primary-txt-color;
+}
+.primary-txt-contrast-color {
+    color: $primary-txt-contrast-color;
+}
+.secondary-txt-color {
+    color: $secondary-txt-color;
+}
+.secondary-txt-contrast-color {
+    color: $secondary-txt-contrast-color;
+}
+.surface-txt-color {
+    color: $surface-txt-color;
+}
+.surface-txt-contrast-color {
+    color: $surface-txt-contrast-color;
+}
+.surface-txt-contrast-transparent-color {
+    color: $surface-txt-contrast-transparent-color;
+}
+.background-txt-color {
+    color: $background-txt-color;
+}
+.background-txt-contrast-color {
+    color: $background-txt-contrast-color;
+}
+.success-txt-color {
+    color: $success-txt-color;
+}
+.success-txt-contrast-color {
+    color: $success-txt-contrast-color;
+}
+.warning-txt-color {
+    color: $warning-txt-color;
+}
+.warning-txt-contrast-color {
+    color: $warning-txt-contrast-color;
+}
+.error-txt-color {
+    color: $error-txt-color;
+}
+.error-txt-contrast-color {
+    color: $error-txt-contrast-color;
+}
+.button-txt-color {
+    color: $button-txt-color;
+}
+.button-txt-contrast-color {
+    color: $button-txt-contrast-color;
+}

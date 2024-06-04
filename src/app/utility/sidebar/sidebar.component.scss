@@ -4,7 +4,7 @@
     align-items: center;
     background-color: $surface-color;
     border-right: 1px solid $surface-contrast-transparent-color;
-    color: $surface-contrast-transparent-color;
+    color: $surface-txt-contrast-transparent-color;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -33,7 +33,7 @@
   transition: background-color 0.3s;
   width: 100%;
   &:hover {
-    color: $surface-contrast-color;
+    color: $surface-txt-contrast-color;
     cursor: pointer;
   }
 }
@@ -47,7 +47,7 @@
   transition: background-color 0.3s;
   width: 100%;
   &:hover {
-    color: $surface-contrast-color;
+    color: $surface-txt-contrast-color;
     cursor: pointer;
   }
 }
@@ -62,7 +62,7 @@
 
 /* Animation */
 .settings {
-  color: $surface-contrast-transparent-color;
+  color: $surface-txt-contrast-transparent-color;
   border-radius:50%;
   background-color:$surface-color;
   animation: pulse 4s ease 0s infinite normal forwards;
@@ -76,11 +76,11 @@
   0%,
   50%,
   100% {
-    color: $surface-contrast-transparent-color;
+    color: $surface-txt-contrast-transparent-color;
   }
 
   25%,
   75% {
-    color: $secondary-color;
+    color: $secondary-txt-color;
   }
 }

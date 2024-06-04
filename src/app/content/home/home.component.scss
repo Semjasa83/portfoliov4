@@ -5,11 +5,9 @@
 :host {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
-  font-family: 'Fira Code', sans-serif;
+  font-family: "Fira Code", sans-serif;
   font-style: normal;
   overflow: hidden;
 }
@@ -19,18 +17,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
   width: 100%;
-
-  // .content-wrapper {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
-  //   height: 95%;
-  //   width: 95%;
-  // }
 }
 
 .bgr-txt-wrapper {
@@ -44,7 +33,7 @@
   justify-content: center;
   align-items: flex-start;
   z-index: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
 
   .bgr-txt {
@@ -55,17 +44,21 @@
   }
 }
 
-.front-txt-wrapper {
-  width: 90%;
-  height: 90%;
+.front-content {
+  z-index: 1;
+  width: fit-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-left: 4rem;
+
   .front-txt-top {
     font-size: 4rem;
     font-weight: 400;
     color: $background-contrast-color;
+    width: fit-content;
   }
   .front-txt-bottom {
     font-size: 2rem;
@@ -73,6 +66,20 @@
     color: $background-contrast-color;
     border-right: 2px solid $primary-color;
     padding-right: 1rem;
+    width: fit-content;
+  }
+
+  .front-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    .btn-wrapper {
+      height: fit-content;
+      min-width: fit-content;
+      width: 10rem;
+    }
+    .ml-8 {
+      margin-left: 2rem;
+    }
   }
 }
-
