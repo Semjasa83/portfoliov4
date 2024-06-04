@@ -3,6 +3,7 @@ import {AboutComponent} from "./content/about/about.component";
 import {ProjectsComponent} from "./content/projects/projects.component";
 import {ContactComponent} from "./content/contact/contact.component";
 import {HomeComponent} from "./content/home/home.component";
+import { SettingsComponent } from './content/settings/settings.component';
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -10,5 +11,7 @@ export const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: 'settings', component: SettingsComponent},
   {path: '**', redirectTo: '404'}
 ];
