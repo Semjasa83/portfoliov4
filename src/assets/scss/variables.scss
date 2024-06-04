@@ -38,9 +38,14 @@ $error-txt-contrast-color: #0d1017;
 $secondary-pulse-color: #39bae6aa;
 
 $button-color: #aad94c;
-$button-contast-color: #0d1017;
+$button-contrast-color: #0d1017;
 $button-txt-color: #aad94c;
 $button-txt-contrast-color: #0d1017;
+
+$button-hover-color: #0d1017;
+$button-hover-contrast-color: #39bae6;
+$button-txt-hover-color: #39bae6;
+$button-txt-hover-contrast-color: #0d1017;
 
 
 /* ---- global background-colors ---- */
@@ -96,7 +101,13 @@ $button-txt-contrast-color: #0d1017;
     background-color: $button-color;
 }
 .button-contrast-color{
-    background-color: $button-contast-color;
+    background-color: $button-contrast-color;
+}
+.button-hover-color {
+    background-color: $button-hover-color;
+}
+.button-hover-contrast-color {
+    background-color: $button-hover-contrast-color;
 }
 
 /* ---- global txt-color ---- */
@@ -150,4 +161,10 @@ $button-txt-contrast-color: #0d1017;
 }
 .button-txt-contrast-color {
     color: $button-txt-contrast-color;
+}
+.button-txt-hover-color {
+    color: $button-txt-hover-color;
+}
+.button-txt-hover-contrast-color {
+    color: $button-txt-hover-contrast-color;
 }
