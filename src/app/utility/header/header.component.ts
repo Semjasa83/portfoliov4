@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {NgOptimizedImage} from "@angular/common";
-import {RouterLink, RouterLinkActive} from "@angular/router";
-import {TranslateModule} from "@ngx-translate/core";
+import { NgIf, NgOptimizedImage } from "@angular/common";
+import { ActivatedRoute, NavigationEnd, Router, RouterLink, RouterLinkActive } from "@angular/router";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
@@ -10,12 +10,24 @@ import {TranslateModule} from "@ngx-translate/core";
         NgOptimizedImage,
         RouterLink,
         RouterLinkActive,
-        TranslateModule
+        TranslateModule,
+        NgIf
     ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
 
-  constructor() {}
+  public activeTab: string | undefined = '';
+
+  constructor(private router: Router, private route: ActivatedRoute) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.activeTab = event.url.split('/').pop();
+        if (this.activeTab === '') {
+          this.activeTab = 'home';
+        }
+      }
+    });
+  }
 }
