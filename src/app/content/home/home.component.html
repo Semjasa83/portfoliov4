@@ -1,9 +1,5 @@
 <div class="home-wrapper">
-  <!--<div class="content-wrapper">-->
-    <section class="bgr-txt-wrapper">
-      <span class="bgr-txt">{{'Main.Home.BackgroundTop' | translate}}</span>
-      <span class="bgr-txt">{{'Main.Home.BackgroundBottom' | translate}}</span>
-    </section>
+  <app-background [lowerText]="'Main.Home.BackgroundBottom'" [upperText]="'Main.Home.BackgroundTop'"></app-background>
 
     <section class="front-content">
 
@@ -20,5 +16,4 @@
         </div>
       </div>
     </section>
-
 </div>

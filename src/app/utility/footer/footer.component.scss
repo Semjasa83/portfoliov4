@@ -30,6 +30,7 @@
         flex-direction: row;
         align-items: center;
         padding: 0.5rem;
+        cursor: pointer;
 
         .material-symbols-outlined {
             font-variation-settings:
@@ -41,10 +42,14 @@
 
         .link {
             align-items: center;
-            cursor: pointer;
             display: flex;
             justify-content: center;
-            margin-left: 0.5rem;
+            margin-left: 0.25rem;
+        }
+
+        &:hover {
+            background-color: $surface-contrast-transparent-color;
+            color: $surface-txt-contrast-color;
         }
     }
 }

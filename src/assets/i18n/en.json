@@ -11,7 +11,10 @@
       "ButtonContact": "Contact Me"
     },
     "About": {},
-    "Contact": {},
+    "Contact": {
+      "BackgroundTop": "get in touch ",
+      "BackgroundBottom": "contact me"
+    },
     "Projects": {}
   },
 
@@ -36,6 +39,9 @@
       "LinkedIn": "_linkedin",
       "Imprint": "_imprint",
       "Privacy": "_privacy"
-    }
+    },
+
+    "Privacy": "_privacy",
+    "Imprint": "_imprint"
   }
 }

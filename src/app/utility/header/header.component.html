@@ -32,5 +32,21 @@
         {{ 'Utility.Navigation.ContactMe' | translate }}
       </div>
     </ng-container>
+    <ng-container *ngIf="activeTab === 'privacy'">
+      <div class="nav-button" routerLink="privacy" routerLinkActive="active">
+        <div class="icon-headline-wrapper">
+          <img alt="typescript-icon" class="typescript icon" height="69" ngSrc="./assets/icons/typescript.png" width="96">
+        </div>
+        {{ 'Utility.Privacy' | translate }}
+      </div>
+    </ng-container>
+    <ng-container *ngIf="activeTab === 'imprint'">
+      <div class="nav-button" routerLink="imprint" routerLinkActive="active">
+        <div class="icon-headline-wrapper">
+          <img alt="typescript-icon" class="typescript icon" height="69" ngSrc="./assets/icons/typescript.png" width="96">
+        </div>
+        {{ 'Utility.Imprint' | translate }}
+      </div>
+    </ng-container>
   </div>
 </div>
