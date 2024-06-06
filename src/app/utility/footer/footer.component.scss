@@ -1,7 +1,9 @@
 @import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/fira_fonts.scss";
+@import "../../../assets/scss/roboto_fonts.scss";
 
 :host {
-    height: 3rem;
+    height: fit-content;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -15,6 +17,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: fit-content;
     position: relative;
 }
 
@@ -22,8 +25,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    right: 1rem;
 
     .link-btn {
         display: flex;
@@ -31,6 +32,7 @@
         align-items: center;
         padding: 0.5rem;
         cursor: pointer;
+        border-top: 1px solid $surface-color;
 
         .material-symbols-outlined {
             font-variation-settings:
@@ -50,30 +52,51 @@
         &:hover {
             background-color: $surface-contrast-transparent-color;
             color: $surface-txt-contrast-color;
+            border-top: 1px solid $primary-color;
         }
+    }
+    .icon-label {
+        margin-left: 0.5rem;
     }
 }
 
-.footer-icons-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    .icons-btn {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0.5rem;
-
-        .icon {
-            align-items: center;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            margin-right: 0.5rem;
-        }
-    }
+.copyright {
+    position: absolute;
+    left: 1rem;
+    font-size: 0.75rem;
+    font-family: fira code;
 }
+
+// .footer-icons-wrapper {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     height: 100%;
+
+//     .icons-btn {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         padding: 0.65rem;
+//         cursor: pointer;
+//         border-top: 1px solid $surface-color;
+//         height: 100%;
+
+//         .icon {
+//             align-items: center;
+//             cursor: pointer;
+//             display: flex;
+//             justify-content: center;
+//             margin-right: 0.5rem;
+//         }
+//         &:hover {
+//             background-color: $surface-contrast-transparent-color;
+//             color: $surface-txt-contrast-color;
+//             border-top: 1px solid $primary-color;
+//         }
+//     }
+    
+// }
 
 
 
