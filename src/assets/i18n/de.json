@@ -28,5 +28,10 @@
       "Imprint": "_imprint",
       "Privacy": "_privacy"
     }
-  }
+  },
+  "placeholder": "Ich war schon immer fasziniert von den vielfältigen Möglichkeiten, die Programmierung sinnvoll für die Automatisierung einzusetzen. Als ich begann, tiefer in die Softwareentwicklung einzutauchen, entdeckte ich, dass dies eine perfekte Kombination meiner Stärken und Interessen ist. Und der kreativität kaum grenzen gesetzt sind.",
+  "placeholder2": "Schnell habe ich gemerkt, dass Fehlersuche, SPS S7 und Arbeitsprozesse analytisches Denken und einen starken Fokus erfordern, was ein großer Teil des Schreibens von strukturiertem Code ist. Ich habe auch gelernt, dass die Zusammenarbeit mit anderen Entwicklern und das Lösen von Problemen in einem Team eine der lohnendsten Erfahrungen ist, die ich je gemacht habe.",
+  "placeholder3": "Ein interessanter Aspekt ist die A11Y (Accessibility) und die damit verbundene Barrierefreiheit. Screen Reader Optimierung und Usability Tests. Damit einhergehend die UI/UX Pattern und erstellen von UI Komponenten. Sowie das einbinden von UI Libraries wie Angular Material etc zusammen mit Theming.",
+  "placeholder4": "Frameworks wie Angular sind mir nicht fremd und ich habe bereits einige Erfahrungen in der Entwicklung von Single Page Applications gesammelt. Wichtig ist dabei wie im Bogensport immer den Fokus und das Ziel vor Augen zu haben. Um dem Endkunden eine optimale Experience zu bieten."
 }
+

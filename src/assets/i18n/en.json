@@ -10,7 +10,14 @@
       "ButtonWork": "View Work",
       "ButtonContact": "Contact Me"
     },
-    "About": {},
+    "About": {
+      "BackgroundTop": "About me",
+      "BackgroundBottom": "get in touch",
+      "UpperIntro": "I have always been fascinated by the many ways in which programming can be used for automation. When I started to dive deeper into software development, I discovered that it was a perfect combination of my strengths and interests. And there are no limits to creativity.",
+      "LowerIntro": "I am a Frontend Developer with a passion for creating modern and responsive web applications. I am experienced in Angular, TypeScript, HTML, CSS, and JavaScript. I am always eager to learn new technologies and improve my skills. I also learned that collaborating with other developers and solving problems as part of a team is one of the most rewarding experiences I've ever had.",
+      "FirstFocus": "One interesting aspect is A11Y (accessibility) and the associated accessibility. Screen reader optimization and usability tests. This goes hand in hand with UI/UX patterns and the creation of UI components. As well as the integration of UI libraries such as Angular Material etc together with theming.",
+      "SecondFocus": "I am no stranger to frameworks such as Angular and I have already gained some experience in the development of single page applications. As in archery, it is important to always have the focus and the goal in mind. To offer the end customer an optimal experience."
+    },
     "Contact": {
       "BackgroundTop": "get in touch ",
       "BackgroundBottom": "contact me"

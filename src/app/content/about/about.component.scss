@@ -3,6 +3,7 @@
 :host {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -10,6 +11,66 @@
 .content-wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.iam-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+
+  .archery-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%; // Set height to 100%
+    max-width: 600px; // Adjust width as needed
+    border-radius: 50%;
+
+    img{
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 10%;
+    }
+  }
+}
+
+.iam-content {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-right: 2rem;
+  .iam-content-text {
+    display: flex;
+    flex-direction: column;
+    text-align: justify-all;
+    padding: 1rem 0;
+  }
+}
+
+.focus-text {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.icon {
+  color: $primary-color;
+  font-size: 4rem;
+  margin-right: 1rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 300,
+    "GRAD" 200,
+    "opsz" 48;
 }
 
 

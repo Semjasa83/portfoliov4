@@ -1,24 +1,42 @@
-
 <!-- <div class="img-wrapper">
   <img src="./assets/Images/profilepic.jpg" alt="profilePic">
 </div> -->
 
 <div class="content-wrapper">
+  <app-background [lowerText]="'Main.About.BackgroundBottom'" [upperText]="'Main.About.BackgroundTop'"></app-background>
+
   <div class="iam-content-wrapper">
-    <img src="./assets/Images/archery.jpeg" alt="altPic">
     <div class="iam-content">
       <div class="iam-content-spacer">
-        <span class="iam-content-text">
-          I have always been fascinated by the diverse possibilities of using programming
-          sensibly for
-          automation. As I started to dive deeper into software development, I discovered that it was a perfect
-          combination of my strengths and interests.
-        </span>
+        <div class="iam-content-text">
+          <span>{{ 'Main.About.UpperIntro' | translate }}</span>
+          <span>{{ 'Main.About.LowerIntro' | translate }}</span>
+        </div>
+        <div class="focus-text">
+          <span class="material-symbols-outlined icon">emoji_objects</span>
+          <span>{{ 'Main.About.FirstFocus' | translate }}</span>
+        </div>
+        <div class="focus-text">
+          <span class="material-symbols-outlined icon">extension</span>
+          <span>{{ 'Main.About.SecondFocus' | translate }}</span>
+        </div>
       </div>
 
       <a class="cursor" href="#" target="_blank">Download CV</a>
     </div>
+
+    <div class="archery-pic">
+      <img ngSrc="./assets/Images/profilepic.jpg" alt="profilePic" height="840" width="600">
+<!--      <img alt="altPic" height="960" ngSrc="./assets/Images/archery.jpeg" width="960">-->
+    </div>
   </div>
+
+
+
+
+
+
+
 
   <div class="skills-content-wrapper">
     <div class="skill-content">
