@@ -9,51 +9,20 @@
   width: 100%;
   font-family: "Fira Code", sans-serif;
   font-style: normal;
-  overflow: hidden;
-}
-
-.home-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  width: 100%;
-}
-
-.bgr-txt-wrapper {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  z-index: 0;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  overflow: hidden;
-
-  .bgr-txt {
-    font-size: 13rem;
-    font-weight: 700;
-    color: $surface-contrast-transparent-color;
-    opacity: 0.1;
-  }
 }
 
 .front-content {
   z-index: 1;
-  width: fit-content;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 4rem;
 
   .front-txt-top {
     font-size: 4rem;
@@ -83,4 +52,13 @@
       margin-left: 2rem;
     }
   }
+}
+
+app-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }

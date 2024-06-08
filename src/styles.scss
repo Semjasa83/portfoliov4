@@ -13,3 +13,24 @@ body {
 li {
   list-style-type: none;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $surface-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $surface-contrast-transparent-color;
+}

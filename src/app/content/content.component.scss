@@ -3,48 +3,38 @@
 :host {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100%;
   background-color: $background-color;
   color: $background-contrast-color;
+  overflow: hidden;
 }
 
 .site-wrapper {
   display: flex;
   flex-direction: row;
-  height: 100%;
+  height: calc(100% - 2.75rem);
   width: 100%;
+  .sidebar-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  }
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .router-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 90%;
+      padding-top: 3rem;
+    }
+  }
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  overflow-y: auto;
-}
 
-.sidebar-wrapper {
-  display: flex;
-  flex-direction: row;
-}
 
-/* width */
-::-webkit-scrollbar {
-  width: 1rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: $background-color; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $surface-color; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: $surface-contrast-transparent-color; 
-}
