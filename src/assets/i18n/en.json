@@ -22,7 +22,14 @@
     },
     "Contact": {
       "BackgroundTop": "get in touch ",
-      "BackgroundBottom": "contact me"
+      "BackgroundBottom": "contact me",
+      "Name": "Name",
+      "Email": "Email",
+      "Subject": "Subject",
+      "Message": "Message",
+      "Phone": "Phone",
+      "ContactEmail": "MarceldeZanna@gmail.com",
+      "ContactPhone": "+49 172 8984502"
     },
     "Projects": {}
   },
