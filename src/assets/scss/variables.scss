@@ -49,54 +49,54 @@
     --button-txt-hover-contrast-color: #0d1017;
 }
 
-$primary-color: #aad94c;
-$primary-contrast-color: #0d1017;
-$primary-txt-color: #aad94c;
-$primary-txt-contrast-color: #0d1017;
+$primary-color: var(--primary-color);
+$primary-contrast-color: var(--primary-contrast-color);
+$primary-txt-color: var(--primary-txt-color);
+$primary-txt-contrast-color: var(--primary-txt-contrast-color);
 
-$secondary-color: #39bae6;
-$secondary-contrast-color: #0d1017;
-$secondary-txt-color: #39bae6;
-$secondary-txt-contrast-color: #0d1017;
+$secondary-color: var(--secondary-color);
+$secondary-contrast-color: var(--secondary-contrast-color);
+$secondary-txt-color: var(--secondary-txt-color);
+$secondary-txt-contrast-color: var(--secondary-txt-contrast-color);
 
-$surface-color: #131822;
-$surface-contrast-color: #bfbdb6;
-$surface-contrast-transparent-color: #bfbdb644;
-$surface-txt-color: #131822;
-$surface-txt-contrast-color: #bfbdb6;
-$surface-txt-contrast-transparent-color: #bfbdb644;
+$surface-color: var(--surface-color);
+$surface-contrast-color: var(--surface-contrast-color);
+$surface-contrast-transparent-color: var(--surface-contrast-transparent-color);
+$surface-txt-color: var(--surface-txt-color);
+$surface-txt-contrast-color: var(--surface-txt-contrast-color);
+$surface-txt-contrast-transparent-color: var(--surface-txt-contrast-transparent-color);
 
-$background-color: #0d1017;
-$background-contrast-color: #bfbdb6;
-$background-txt-color: #0d1017;
-$background-txt-contrast-color: #bfbdb6;
+$background-color: var(--background-color);
+$background-contrast-color: var(--background-contrast-color);
+$background-txt-color: var(--background-txt-color);
+$background-txt-contrast-color: var(--background-txt-contrast-color);
 
-$success-color: #7fd962;
-$success-contrast-color: #0d1017;
-$success-txt-color: #7fd962;
-$success-txt-contrast-color: #0d1017;
+$success-color: var(--success-color);
+$success-contrast-color: var(--success-contrast-color);
+$success-txt-color: var(--success-txt-color);
+$success-txt-contrast-color: var(--success-txt-contrast-color);
 
-$warning-color: #ffb454;
-$warning-contrast-color: #0d1017;
-$warning-txt-color: #ffb454;
-$warning-txt-contrast-color: #0d1017;
+$warning-color: var(--warning-color);
+$warning-contrast-color: var(--warning-contrast-color);
+$warning-txt-color: var(--warning-txt-color);
+$warning-txt-contrast-color: var(--warning-txt-contrast-color);
 
-$error-color: #f26d78;
-$error-contrast-color: #0d1017;
-$error-txt-color: #f26d78;
-$error-txt-contrast-color: #0d1017;
+$error-color: var(--error-color);
+$error-contrast-color: var(--error-contrast-color);
+$error-txt-color: var(--error-txt-color);
+$error-txt-contrast-color: var(--error-txt-contrast-color);
 
-$secondary-pulse-color: #39bae6aa;
+$secondary-pulse-color: var(--secondary-pulse-color);
 
-$button-color: #aad94c;
-$button-contrast-color: #0d1017;
-$button-txt-color: #aad94c;
-$button-txt-contrast-color: #0d1017;
+$button-color: var(--button-color);
+$button-contrast-color: var(--button-contrast-color);
+$button-txt-color: var(--button-txt-color);
+$button-txt-contrast-color: var(--button-txt-contrast-color);
 
-$button-hover-color: #0d1017;
-$button-hover-contrast-color: #bfbdb6;
-$button-txt-hover-color: #bfbdb6;
-$button-txt-hover-contrast-color: #0d1017;
+$button-hover-color: var(--button-hover-color);
+$button-hover-contrast-color: var(--button-hover-contrast-color);
+$button-txt-hover-color: var(--button-txt-hover-color);
+$button-txt-hover-contrast-color: var(--button-txt-hover-contrast-color);
 
 
 /* ---- global background-colors ---- */
