@@ -30,7 +30,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "src/assets/themes/ayu.scss",
+                "bundleName": "ayu",
+                "inject": false
+              },
+              {
+                "input": "src/assets/themes/vscode.scss",
+                "bundleName": "vscode",
+                "inject": false
+              }
             ],
             "scripts": []
           },
