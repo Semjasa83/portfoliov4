@@ -24,10 +24,14 @@ export class SettingsComponent {
     console.log('test');
     
     this.isAyuThemeActive = !this.isAyuThemeActive;
+    console.log(this.isAyuThemeActive);
+    
     if (this.isAyuThemeActive) {
       this.themeService.setTheme(Theme.Ayu);
+      console.log(this.themeService.setTheme(Theme.Ayu));
     } else {
       this.themeService.setTheme(Theme.Test);
+      console.log(this.themeService.setTheme(Theme.Test));
     }
 
 }}

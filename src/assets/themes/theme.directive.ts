@@ -20,23 +20,23 @@ export class ThemeDirective implements OnInit {
   public ngOnInit(): void {
     const active: IThemeOptions = this.themeService.getActiveTheme();
     if (active) {
-        this.updateTheme(active);
+      this.updateTheme(active);
     }
     this.themeService.themeChange
-        .pipe(
-            takeUntil(this.unsubscribe)
-        )
-        .subscribe((theme: IThemeOptions) => this.updateTheme(theme));
-}
+      .pipe(
+        takeUntil(this.unsubscribe)
+      )
+      .subscribe((theme: IThemeOptions) => this.updateTheme(theme));
+  }
 
-// public ngOnDestroy(): void {
-//     this.unsubscribe.next();
-// }
+  public ngOnDestroy(): void {
+    this.unsubscribe.next(false);
+  }
 
-public updateTheme(theme: IThemeOptions): void {
+  public updateTheme(theme: IThemeOptions): void {
     Object.keys(theme.customProperties).forEach((key: string): void => {
-        this.elementRef.nativeElement.style.setProperty(key, theme.customProperties[key as AvailableProperties]);
+      this.elementRef.nativeElement.style.setProperty(key, theme.customProperties[key as AvailableProperties]);
     });
-}
+  }
 
 }

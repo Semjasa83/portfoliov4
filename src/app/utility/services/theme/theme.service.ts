@@ -24,8 +24,9 @@ export class ThemeService {
       return theme;
   }
 
-  public setTheme(name: Theme): void {
+  public setTheme(name: Theme) {
       this.activeTheme = name;
       this.themeChange.emit( this.getActiveTheme());
+      return this.getActiveTheme();
   }
 }
