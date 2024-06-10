@@ -27,6 +27,9 @@
   .btn-icon {
     margin: 0 0.5rem;
   }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .filled {

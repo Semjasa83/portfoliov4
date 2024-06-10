@@ -48,5 +48,13 @@
         {{ 'Utility.Imprint' | translate }}
       </div>
     </ng-container>
+    <ng-container *ngIf="activeTab === 'settings'">
+      <div class="nav-button" routerLink="settings" routerLinkActive="active">
+        <div class="icon-headline-wrapper">
+          <span class="material-symbols-outlined settings">settings</span>
+        </div>
+        {{ 'Utility.Navigation.Settings' | translate }}
+      </div>
+    </ng-container>
   </div>
 </div>

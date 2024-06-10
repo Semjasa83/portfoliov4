@@ -47,7 +47,8 @@
       "Projects": "_projects.json",
       "ContactMe": "_contact-me.ts",
       "GitHub": "_github.js",
-      "LinkedIn": "_linkedin.md"
+      "LinkedIn": "_linkedin.md",
+      "Settings": "_settings.opt"
     },
 
     "Footer": {

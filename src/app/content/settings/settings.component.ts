@@ -21,6 +21,8 @@ export class SettingsComponent {
   constructor(private themeService: ThemeService) { }
 
   public toggleTheme(): void {
+    console.log('test');
+    
     this.isAyuThemeActive = !this.isAyuThemeActive;
     if (this.isAyuThemeActive) {
       this.themeService.setTheme(Theme.Ayu);
