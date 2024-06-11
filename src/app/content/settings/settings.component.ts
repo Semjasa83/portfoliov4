@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ThemeService } from '../../utility/services/theme/theme.service';
 import { Theme } from '../../../assets/themes/theme_interface';
 import { ButtonComponent } from "../../utility/button/button.component";
@@ -14,24 +14,24 @@ import { TranslateModule } from '@ngx-translate/core';
       TranslateModule
     ]
 })
-export class SettingsComponent {
+export class SettingsComponent implements OnInit {
 
-  public isAyuThemeActive: boolean = true;
+  public defaultThemeActive: boolean = true;
 
   constructor(private themeService: ThemeService) { }
 
+  ngOnInit() {
+    this.themeService.themeChange.subscribe(theme => {
+      console.log('received theme change event', theme);
+    });
+  }
+
   public toggleTheme(): void {
-    console.log('test');
-    
-    this.isAyuThemeActive = !this.isAyuThemeActive;
-    console.log(this.isAyuThemeActive);
-    
-    if (this.isAyuThemeActive) {
+    this.defaultThemeActive = !this.defaultThemeActive;
+    if (this.defaultThemeActive) {
       this.themeService.setTheme(Theme.Ayu);
-      console.log(this.themeService.setTheme(Theme.Ayu));
     } else {
       this.themeService.setTheme(Theme.Test);
-      console.log(this.themeService.setTheme(Theme.Test));
     }
 
 }}

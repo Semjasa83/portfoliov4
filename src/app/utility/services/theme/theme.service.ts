@@ -13,20 +13,23 @@ export class ThemeService {
   public themeChange: EventEmitter<IThemeOptions> = new EventEmitter<IThemeOptions>();
 
   private themes: Array<IThemeOptions> = [ayuTheme, testTheme];
-  private activeTheme: Theme = Theme.Ayu;
+  private activeTheme: Theme = Theme.Test;
 
   public getActiveTheme(): IThemeOptions {
       const theme: IThemeOptions | undefined = this.themes.find((option: IThemeOptions) => option.name === this.activeTheme);
       if (!theme) {
           throw new Error(`Theme not found: '${this.activeTheme}'`);
       }
-
       return theme;
   }
 
   public setTheme(name: Theme) {
       this.activeTheme = name;
+      console.log('log',this.getActiveTheme());
       this.themeChange.emit( this.getActiveTheme());
-      return this.getActiveTheme();
+      console.log('emit', this.themeChange.emit( this.getActiveTheme()));
+      
+      //return this.getActiveTheme();
   }
+  
 }
