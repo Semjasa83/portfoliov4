@@ -1,13 +1,13 @@
 import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import { IThemeOptions, Theme } from './theming/theme.interface';
-import { themes, vscodeTheme } from './theming/theme.class';
+import { themes, vscode, ayu } from './theming/theme.class';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
   // private renderer: Renderer2;
-  public theme: IThemeOptions[] = [ themes[0]];
+  // public theme: IThemeOptions[] = [ themes[0]];
 
   constructor(private rendererFactory: RendererFactory2) {
     // this.renderer = this.rendererFactory.createRenderer(null, null);
@@ -22,7 +22,7 @@ export class ThemeService {
 
 public setTheme() {
   const root = document.documentElement;
-  root.setAttribute('style', this.loopColorsFromTheme(vscodeTheme));
+  root.setAttribute('style', this.loopColorsFromTheme(vscode));
 }
 
 private loopColorsFromTheme(obj: {[key:string]: string}): string {
@@ -34,9 +34,3 @@ private loopColorsFromTheme(obj: {[key:string]: string}): string {
 }
 
 }
-// in der componente als merker
-// this.themeService.setTheme({
-//   'primary-color': '#ff0000',
-//   'secondary-color': '#00ff00',
-// });
-
