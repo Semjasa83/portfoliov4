@@ -31,7 +31,10 @@
       "ContactEmail": "MarceldeZanna@gmail.com",
       "ContactPhone": "+49 172 8984502"
     },
-    "Projects": {}
+    "Projects": {},
+    "Settings": {
+      "TestButton": "Test Button"
+    }
   },
 
   "Utility": {
