@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ButtonComponent } from "../../utility/button/button.component";
 import { TranslateModule } from '@ngx-translate/core';
+import { ThemeService } from '../../utility/services/theme/theme.service';
 
 @Component({
     selector: 'app-settings',
@@ -14,6 +15,9 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class SettingsComponent{
 
-  constructor() { }
+  constructor(private themeService: ThemeService) { }
 
+  public setTheme() {
+    this.themeService.setTheme()
+}
 }
