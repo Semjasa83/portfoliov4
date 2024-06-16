@@ -110,10 +110,11 @@ export const vscode = {
 
     '--secondary-pulse-color': '#aad94caa',
 
-    '--button-color': '#aad94c',
+    '--button-color': '#39bae6',
     '--button-contrast-color': '#0d1017',
-    '--button-txt-color': '#aad94c',
+    '--button-txt-color': '#39bae6',
     '--button-txt-contrast-color': '#0d1017',
+
     '--button-hover-color': '#0d1017',
     '--button-hover-contrast-color': '#bfbdb6',
     '--button-txt-hover-color': '#bfbdb6',

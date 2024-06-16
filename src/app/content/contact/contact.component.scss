@@ -12,6 +12,7 @@
   position: relative;
   justify-content: center;
   align-items: flex-start;
+  z-index: 1;
 }
 
 .bgr-txt-wrapper {
@@ -55,7 +56,22 @@
     gap: 1rem;
     border-right: 0.5px solid $primary-color;
     padding-right: 2rem;
+    .input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      background-color: $surface-color;
+      border: 2px solid $surface-contrast-transparent-color;
+      color: $surface-txt-contrast-color;
+      font-family: "Fira Code", sans-serif;
+    }
+
+    .input-message {
+      resize: none;
+    }
   }
+
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -63,19 +79,31 @@
     margin-left: 2rem;
     height: 100%;
     width: 100%;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    .contact-icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      padding-top: 2rem;
+
+      a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $primary-color;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
   }
-}
-
-.input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: $surface-color;
-  border: 2px solid $surface-contrast-transparent-color;
-  color: $surface-txt-contrast-color;
-}
-
-.input-message {
-  resize: none;
 }

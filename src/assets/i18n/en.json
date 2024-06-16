@@ -18,7 +18,8 @@
       "LowerIntro": "I am a Frontend Developer with a passion for creating modern and responsive web applications. I am experienced in Angular, TypeScript, HTML, CSS, and JavaScript. I am always eager to learn new technologies and improve my skills. I also learned that collaborating with other developers and solving problems as part of a team is one of the most rewarding experiences I've ever had.",
       "FirstFocus": "One interesting aspect is A11Y (accessibility) and the associated accessibility. This goes hand in hand with UI/UX patterns and the creation of UI components. As well as the integration of UI libraries such as Angular Material etc together with theming.",
       "SecondFocus": "I am no stranger to frameworks such as Angular and I have already gained some experience in the development of single page applications.",
-      "Skills": "_My Skills"
+      "Skills": "_My Skills",
+      "SkillsExplain": "At this point my frontend development skills, which I have used in several single and group projects. More on that in the projects below."
     },
     "Contact": {
       "BackgroundTop": "get in touch ",
