@@ -114,6 +114,14 @@
 
 .active {
   background-color: $surface-contrast-transparent-color;
-  color: $surface-txt-contrast-color;
+  color: $primary-txt-color;
   border-left: 1px solid $primary-color;
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-decoration: none;
+  color: unset;
 }
