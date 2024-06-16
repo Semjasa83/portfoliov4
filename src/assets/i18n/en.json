@@ -31,32 +31,31 @@
       "ContactEmail": "MarceldeZanna@gmail.com",
       "ContactPhone": "+49 172 8984502"
     },
-    "Projects": {}
+    "Projects": {},
+    "Settings": {
+      "TestButton": "Test Button"
+    }
   },
-
   "Utility": {
-
     "Explorer": {
       "Headline": "Explorer",
       "SubHeadline": "Portfolio_V4"
     },
-
     "Navigation": {
       "Home": "_home.scss",
       "AboutMe": "_about-me.html",
       "Projects": "_projects.json",
       "ContactMe": "_contact-me.ts",
       "GitHub": "_github.js",
-      "LinkedIn": "_linkedin.md"
+      "LinkedIn": "_linkedin.md",
+      "Settings": "_settings.opt"
     },
-
     "Footer": {
       "GitHub": "_github",
       "LinkedIn": "_linkedin",
       "Imprint": "_imprint",
       "Privacy": "_privacy"
     },
-
     "Privacy": "_privacy",
     "Imprint": "_imprint"
   }

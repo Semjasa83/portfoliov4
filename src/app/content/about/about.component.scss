@@ -3,7 +3,7 @@
 :host {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   height: 100%;
   font-family: "Fira Code";
   position: relative;
@@ -31,11 +31,13 @@
       display: flex;
       flex-direction: column;
       width: 70%;
+
       .content-text {
         display: flex;
         flex-direction: column;
         text-align: justify-all;
         padding: 1rem 0;
+        
         .upper-content-text {
           margin-bottom: 1rem;
         }

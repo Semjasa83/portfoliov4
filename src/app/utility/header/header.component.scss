@@ -85,4 +85,16 @@
   background-color: $surface-contrast-transparent-color;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+      "FILL" 0,
+      "wght" 200,
+      "GRAD" -25,
+      "opsz" 24;
+}
 
+.settings {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
