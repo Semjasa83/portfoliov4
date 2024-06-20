@@ -17,7 +17,6 @@
 
 .front-content {
   z-index: 1;
-  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -30,14 +29,18 @@
     color: $background-contrast-color;
     width: fit-content;
   }
-  .front-txt-bottom {
-    font-size: 2rem;
-    font-weight: 400;
-    color: $background-contrast-color;
-    border-right: 2px solid $primary-color;
-    padding-right: 1rem;
+  .front-bottom-txt-spacer {
     width: fit-content;
+    .front-txt-bottom {
+      font-size: 2rem;
+      font-weight: 400;
+      color: $background-contrast-color;
+      border-right: 2px solid $primary-color;
+      padding-right: 1rem;
+      width: fit-content;
+    }
   }
+
 
   .front-button-wrapper {
     display: flex;
@@ -61,4 +64,33 @@ app-background {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+
+.typing-effect {
+  display: flex;
+  justify-content: flex-start;
+  border-right: 2px solid $primary-color;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: left; /* Text links ausrichten */
+  animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
+}
+
+
+.txt-invisibility {
+  visibility: hidden;
+}
+
+.txt-visibility {
+  visibility: visible;
 }

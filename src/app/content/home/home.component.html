@@ -1,8 +1,11 @@
 
   <app-background [lowerText]="'Main.Home.BackgroundBottom'" [upperText]="'Main.Home.BackgroundTop'"></app-background>
   <section class="front-content">
-    <span class="front-txt-top">{{'Main.Home.Name' | translate}}</span>
-    <span class="front-txt-bottom">{{'Main.Home.Title' | translate}}</span>
+      <span #topText class="front-txt-top txt-invisibility">{{'Main.Home.Name' | translate}}</span>
+      <div class="front-bottom-txt-spacer">
+        <span #bottomText class="front-txt-bottom txt-invisibility">{{'Main.Home.Title' | translate}}</span>
+      </div>
+
     <div class="front-button-wrapper">
       <div class="btn-wrapper">
         <app-button [text]="'Main.Home.ButtonWork' | translate"></app-button>

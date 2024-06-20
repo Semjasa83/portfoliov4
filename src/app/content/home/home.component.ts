@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { NgFor } from "@angular/common";
 import { TranslateModule } from "@ngx-translate/core";
-import {ButtonComponent} from "../../utility/button/button.component";
+import { ButtonComponent } from "../../utility/button/button.component";
 import { BackgroundComponent } from "../../utility/background/background.component";
+
 
 @Component({
     selector: 'app-home',
@@ -16,6 +17,44 @@ import { BackgroundComponent } from "../../utility/background/background.compone
         BackgroundComponent
     ]
 })
-export class HomeComponent {
+
+export class HomeComponent implements AfterViewInit{
+
+    @ViewChild('topText') topText: ElementRef | undefined;
+    @ViewChild('bottomText') bottomText: ElementRef | undefined;
+
+    constructor() {
+
+    }
+  
+    ngAfterViewInit() {
+        if (this.topText) {
+            this.firstAnimation();
+        }
+    }
+
+    private async firstAnimation() {
+        if (this.topText) {
+            this.topText.nativeElement.classList.remove('txt-invisibility');
+            this.topText.nativeElement.classList.add('typing-effect');
+            this.topText.nativeElement.addEventListener('animationend', () => {
+                this.topText?.nativeElement.classList.remove('typing-effect');
+                // this.topText?.nativeElement.classList.add('txt-visibility ');
+                this.secondAnimation();
+              });
+        }
+
+    }
+
+    private async secondAnimation() {
+        if (this.bottomText) {
+            this.bottomText.nativeElement.classList.remove('txt-invisibility');
+            this.bottomText?.nativeElement.classList.add('typing-effect');
+            // this.bottomText.nativeElement.addEventListener('animationend', () => {
+            //     this.bottomText?.nativeElement.classList.remove('typing-effect');
+            //     // this.bottomText?.nativeElement.classList.add('txt-visibility ');
+            //   });
+        }
+    }
 
 }
