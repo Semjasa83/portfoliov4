@@ -70,6 +70,15 @@
     .input-message {
       resize: none;
     }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      app-button {
+        margin-top: 1rem;
+        width: 8rem;
+      }
+    }
   }
 
   .contact-info {

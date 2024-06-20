@@ -3,7 +3,7 @@
 
 <section class="front-content">
 
-  <div class="contact-form">
+  <div class="contact-form noselect">
     <span class="input-headline">_{{ 'Main.Contact.Name' | translate }}:</span>
     <input class="input-name input" type="text">
     <span class="input-headline">_{{ 'Main.Contact.Email' | translate }}:</span>
@@ -12,9 +12,13 @@
     <input class="input-subject input" type="text">
     <span class="input-headline">_{{ 'Main.Contact.Message' | translate }}:</span>
     <textarea class="input-message input" id="" name="" rows="7"></textarea>
+    <div class="btn-wrapper">
+      <app-button [text]="'Main.Contact.ButtonSend' | translate"></app-button>
+    </div>
+
   </div>
 
-  <div class="contact-info">
+  <div class="contact-info noselect">
     <span class="input-headline">_{{ 'Main.Contact.Email' | translate }}:</span>
     <a class="contact-email" href= "mailto: MarceldeZanna@gmail.com">{{ 'Main.Contact.ContactEmail' | translate }}</a>
     <span class="input-headline">_{{ 'Main.Contact.Phone' | translate }}:</span>

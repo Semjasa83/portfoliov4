@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { ButtonComponent } from '../../utility/button/button.component';
+import { ButtonComponent } from "../../utility/button/button.component";
 import { BackgroundComponent } from "../../utility/background/background.component";
 
 @Component({
@@ -10,7 +10,8 @@ import { BackgroundComponent } from "../../utility/background/background.compone
     styleUrl: './contact.component.scss',
     imports: [
         TranslateModule,
-        BackgroundComponent
+        BackgroundComponent,
+        ButtonComponent
     ]
 })
 export class ContactComponent {
