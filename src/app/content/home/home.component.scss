@@ -35,12 +35,10 @@
       font-size: 2rem;
       font-weight: 400;
       color: $background-contrast-color;
-      border-right: 2px solid $primary-color;
       padding-right: 1rem;
       width: fit-content;
     }
   }
-
 
   .front-button-wrapper {
     display: flex;
@@ -91,6 +89,6 @@ app-background {
   visibility: hidden;
 }
 
-.txt-visibility {
-  visibility: visible;
-}
+// .txt-visibility {
+//   visibility: visible;
+// }
