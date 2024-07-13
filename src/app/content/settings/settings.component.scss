@@ -1,19 +1,36 @@
 :host {
     display: flex;
+    flex-direction: column;
     width: 90%;
     height: 100%;
-}
+    font-family: "Fira Code", sans-serif;
+    position: relative;
+  }
 
 .content-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
     z-index: 1;
+    gap: 2rem;
+    .settings-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .setting-headline {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .btn-wrapper {
+            height: fit-content;
+            min-width: fit-content;
+            width: 10rem;
+          }
+    }
 }
 
-app-button {
-    width: fit-content;
-}
+

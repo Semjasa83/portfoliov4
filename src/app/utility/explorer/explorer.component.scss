@@ -35,10 +35,11 @@
     margin-left: 1.5rem;
 
     .material-symbols-outlined {
-      font-variation-settings: "FILL" 0,
-      "wght" 100,
-      "GRAD" 200,
-      "opsz" 36;
+      font-variation-settings:
+        "FILL" 0,
+        "wght" 100,
+        "GRAD" 200,
+        "opsz" 36;
     }
 
     .explorer-headline {
@@ -107,6 +108,13 @@
       .icon {
         object-fit: contain;
         width: fit-content;
+      }
+      .settings {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 100,
+          "GRAD" 200,
+          "opsz" 48;
       }
     }
   }

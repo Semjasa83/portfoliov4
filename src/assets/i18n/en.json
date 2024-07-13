@@ -35,7 +35,14 @@
     },
     "Projects": {},
     "Settings": {
-      "TestButton": "Test Button"
+      "BackgroundTop": "set your ",
+      "BackgroundBottom": "Theme & Language",
+      "Themes": "Theme",
+      "Languages": "Language",
+      "Ayu": "AyuDark",
+      "VsCode": "VsCode",
+      "Night": "NightOwl",
+      "Unleashed": "Unleashed"
     }
   },
   "Utility": {
