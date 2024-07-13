@@ -1,5 +1,9 @@
 
 <section class="content-wrapper">
-    <app-button [text]="'Main.Settings.TestButton' | translate" [outlined]="true" (click)="setTheme()"></app-button>
+    <app-button [text]="'Main.Settings.TestButton' | translate" [outlined]="true" (click)="setThemeFromString('vscode')"></app-button>
+    <select (change)="setTheme($any($event.target).value)">
+        <option value="ayu">Ayu</option>
+        <option value="vscode">VsCode</option>
+    </select>
 
 </section>

@@ -1,22 +1,22 @@
-import { AvailableProperties, IThemeOptions, Theme } from './theme.interface';
+// import { AvailableProperties, Theme } from './theme.interface';
 
-export const themes: IThemeOptions[] = [
-{
-    name: Theme.Ayu,
-    customProperties: {
-        [AvailableProperties.Background]: '#0d1017',
-        [AvailableProperties.BackgroundContrast]: '#bfbdb6',
-    }
-},
+// export const themes: IThemeOptions[] = [
+// {
+//     name: Theme.Ayu,
+//     customProperties: {
+//         [AvailableProperties.Background]: '#0d1017',
+//         [AvailableProperties.BackgroundContrast]: '#bfbdb6',
+//     }
+// },
 
-{
-    name: Theme.Test,
-    customProperties: {
-        [AvailableProperties.Background]: '#263238',
-        [AvailableProperties.BackgroundContrast]: '#c9d1c9',
-    }
-}
-]
+// {
+//     name: Theme.Test,
+//     customProperties: {
+//         [AvailableProperties.Background]: '#263238',
+//         [AvailableProperties.BackgroundContrast]: '#c9d1c9',
+//     }
+// }
+// ]
 
 
 export const ayu = {
@@ -120,3 +120,6 @@ export const vscode = {
     '--button-txt-hover-color': '#bfbdb6',
     '--button-txt-hover-contrast-color': '#0d1017'
 }
+
+export const nightowl = {}
+export const unleashed = {}

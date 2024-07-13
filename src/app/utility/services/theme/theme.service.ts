@@ -1,31 +1,31 @@
 import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
-import { IThemeOptions, Theme } from './theming/theme.interface';
-import { themes, vscode, ayu } from './theming/theme.class';
+import * as themes from './theming/theme.class';
+import { ThemeName } from './theming/theme.enum'; // Angenommen, das Enum befindet sich in theme.enum.ts
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
-  // private renderer: Renderer2;
-  // public theme: IThemeOptions[] = [ themes[0]];
 
-  constructor(private rendererFactory: RendererFactory2) {
-    // this.renderer = this.rendererFactory.createRenderer(null, null);
-   }
-
-  //  setTheme(theme: { [key: string]: string }): void {
-  //   Object.keys(theme).forEach(key => {
-  //     this.renderer.setStyle(document.body, `--${key}`, theme[key]);
-  //   });
-  // }
+  constructor(private rendererFactory: RendererFactory2) {}
 
 
-public setTheme() {
+// public setThemeManu() {
+//   const root = document.documentElement;
+//   root.setAttribute('style', this.loopColorsFromTheme(vscode));
+// }
+
+public setTheme(theme: ThemeName) {
+  const themeClass = themes[theme]; // Zugriff auf die entsprechende Theme-Klasse basierend auf dem Enum-Wert
+  if (!themeClass) {
+    console.error(`Theme ${theme} not found.`);
+    return;
+  }
   const root = document.documentElement;
-  root.setAttribute('style', this.loopColorsFromTheme(vscode));
+  root.setAttribute('style', this.loopColorsFromTheme(themeClass));
 }
 
-private loopColorsFromTheme(obj: {[key:string]: string}): string {
+private loopColorsFromTheme(obj: {[key:string]: string}) {
   let result = '';
   for (let [key, value] of Object.entries(obj)) {
     result += `${key}: ${value};`;

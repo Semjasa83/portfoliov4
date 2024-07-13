@@ -44,8 +44,8 @@
       "SubHeadline": "Portfolio_V4"
     },
     "Navigation": {
-      "Home": "_home.scss",
-      "AboutMe": "_about-me.html",
+      "Home": "_home.html",
+      "AboutMe": "_about-me.scss",
       "Projects": "_projects.json",
       "ContactMe": "_contact-me.ts",
       "GitHub": "_github.js",
