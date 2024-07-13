@@ -81,7 +81,7 @@ app-background {
   overflow: hidden;
   margin: 0 auto;
   text-align: left; /* Text links ausrichten */
-  animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
+  animation: typing 2s steps(200, end), blink-caret .75s step-end infinite;
 }
 
 

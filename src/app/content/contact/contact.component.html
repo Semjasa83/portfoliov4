@@ -3,19 +3,18 @@
 
 <section class="front-content">
 
-  <div class="contact-form noselect">
+  <div class="contact-form noselect" [formGroup]="contactForm">
     <span class="input-headline">_{{ 'Main.Contact.Name' | translate }}:</span>
-    <input class="input-name input" type="text">
+    <input class="input-name input" type="text" formControlName="name">
     <span class="input-headline">_{{ 'Main.Contact.Email' | translate }}:</span>
-    <input class="input-email input" type="email">
+    <input class="input-email input" type="email" formControlName="email">
     <span class="input-headline">_{{ 'Main.Contact.Subject' | translate }}:</span>
-    <input class="input-subject input" type="text">
+    <input class="input-subject input" type="text" formControlName="subject">
     <span class="input-headline">_{{ 'Main.Contact.Message' | translate }}:</span>
-    <textarea class="input-message input" id="" name="" rows="7"></textarea>
-    <div class="btn-wrapper">
+    <textarea class="input-message input" id="" name="" rows="7" formControlName="message"></textarea>
+    <div class="btn-wrapper" (click)="onSubmit()">
       <app-button [text]="'Main.Contact.ButtonSend' | translate"></app-button>
     </div>
-
   </div>
 
   <div class="contact-info noselect">

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from "../../utility/button/button.component";
 import { BackgroundComponent } from "../../utility/background/background.component";
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-contact',
@@ -11,9 +12,32 @@ import { BackgroundComponent } from "../../utility/background/background.compone
     imports: [
         TranslateModule,
         BackgroundComponent,
-        ButtonComponent
+        ButtonComponent,
+        ReactiveFormsModule
     ]
 })
+
 export class ContactComponent {
 
+
+    form!: FormGroup;
+    submitted = false;
+
+    contactForm = new FormGroup({
+        name: new FormControl('', Validators.requiredTrue),
+        email: new FormControl('', [Validators.requiredTrue, Validators.email]),
+        subject: new FormControl('', Validators.requiredTrue),
+        message: new FormControl('', Validators.requiredTrue)
+    });
+
+    onSubmit() {
+        // TODO: Use EventEmitter with form value
+        
+        console.log(this.contactForm.value);
+      }
+
+      onReset() {
+          this.submitted = false;
+          this.contactForm.reset();
+      }
 }

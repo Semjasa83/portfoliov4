@@ -22,7 +22,7 @@ export class ButtonComponent {
   @Input() outlined?: boolean = false;
   @Output() buttonClick: EventEmitter<void> | undefined;
 
-  onClick() {
+  onSubmit() {
     if (this.buttonClick) {
       this.buttonClick.emit();
       console.log('button',this.buttonClick.emit());
