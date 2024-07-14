@@ -160,7 +160,7 @@ export const unleashed = {
 
     '--secondary-color': '#39bae6',
     '--secondary-contrast-color': '#9FA9BD',
-    '--secondary-txt-color': '#39bae6',
+    '--secondary-txt-color': '#63F3AB',
     '--secondary-txt-contrast-color': '#9FA9BD',
 
     '--surface-color': '#161A21',
