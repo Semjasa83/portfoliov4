@@ -1,37 +1,71 @@
 {
   "Main": {
-    "About": {},
-    "Contact": {},
-    "Hello": {},
-    "Projects": {}
+    "Home": {
+      "BackgroundTop": "Web & Angular",
+      "BackgroundBottom": "Developer",
+      "Iam": "I am",
+      "Name": "Marcel de Zanna",
+      "Title": "Frontend Web Developer",
+      "Description": "and this is my portfolio.",
+      "ButtonWork": "Projecte",
+      "ButtonContact": "Kontakt"
+    },
+    "About": {
+      "BackgroundTop": "Über mich",
+      "BackgroundBottom": "melde dich",
+      "AboutMe": "_Über mich",
+      "UpperIntro": "Ich war schon immer fasziniert von den vielen Möglichkeiten, die die Programmierung für die Automatisierung bietet. Und der Kreativität sind keine Grenzen gesetzt. Wie beim Bogenschießen ist es wichtig, immer den Fokus und das Ziel vor Augen zu haben. Dem Endkunden ein optimales Erlebnis zu bieten.",
+      "LowerIntro": "Ich bin ein Frontend-Entwickler mit einer Leidenschaft für die Erstellung moderner und reaktionsfähiger Webanwendungen. Ich bin erfahren in Angular, TypeScript, HTML, CSS und JavaScript. Ich bin immer bestrebt, neue Technologien zu erlernen und meine Fähigkeiten zu verbessern. Außerdem habe ich gelernt, dass die Zusammenarbeit mit anderen Entwicklern und das Lösen von Problemen im Team eine der lohnendsten Erfahrungen ist, die ich je gemacht habe.",
+      "FirstFocus": "Ein interessanter Aspekt ist A11Y (Barrierefreiheit) und die damit verbundene Zugänglichkeit. Dies geht Hand in Hand mit UI/UX-Mustern und der Erstellung von UI-Komponenten. Sowie die Integration von UI-Bibliotheken wie Angular Material etc. zusammen mit Theming.",
+      "SecondFocus": "Frameworks wie Angular sind mir nicht fremd und ich habe bereits einige Erfahrung in der Entwicklung von Single-Page-Anwendungen gesammelt.",
+      "Skills": "_Meine Skills",
+      "SkillsExplain": "An dieser Stelle meine Frontend-Entwicklungskenntnisse, die ich in mehreren Einzel- und Gruppenprojekten eingesetzt habe. Mehr dazu in der Projekt Sektion."
+    },
+    "Contact": {
+      "BackgroundTop": "melde dich ",
+      "BackgroundBottom": "trete mit mir in Kontakt",
+      "Name": "Name",
+      "Email": "Email",
+      "Subject": "Betreff",
+      "Message": "Nachricht",
+      "Phone": "Telefon",
+      "ContactEmail": "MarceldeZanna@gmail.com",
+      "ContactPhone": "+49 172 8984502",
+      "ButtonSend": "Send"
+    },
+    "Projects": {},
+    "Settings": {
+      "BackgroundTop": "wähle dein ",
+      "BackgroundBottom": "Design & Sprache",
+      "Themes": "Design",
+      "Languages": "Sprache",
+      "Ayu": "AyuDark",
+      "VsCode": "VsCode",
+      "Night": "NightOwl",
+      "Unleashed": "Unleashed"
+    }
   },
-
   "Utility": {
-
     "Explorer": {
       "Headline": "Explorer",
       "SubHeadline": "Portfolio_V4"
     },
-
     "Navigation": {
-      "Hello": "_hallo.scss",
-      "AboutMe": "_binich.html",
-      "Projects": "_projects.json",
-      "ContactMe": "_contact-me.ts",
+      "Home": "_home.html",
+      "AboutMe": "_uber_mich.scss",
+      "Projects": "_projekte.json",
+      "ContactMe": "_kontakt.ts",
       "GitHub": "_github.js",
-      "LinkedIn": "_linkedin.md"
+      "LinkedIn": "_linkedin.md",
+      "Settings": "_einstellungen.opt"
     },
-
     "Footer": {
       "GitHub": "_github",
       "LinkedIn": "_linkedin",
-      "Imprint": "_imprint",
-      "Privacy": "_privacy"
-    }
-  },
-  "placeholder": "Ich war schon immer fasziniert von den vielfältigen Möglichkeiten, die Programmierung sinnvoll für die Automatisierung einzusetzen. Als ich begann, tiefer in die Softwareentwicklung einzutauchen, entdeckte ich, dass dies eine perfekte Kombination meiner Stärken und Interessen ist. Und der kreativität kaum grenzen gesetzt sind.",
-  "placeholder2": "Schnell habe ich gemerkt, dass Fehlersuche, SPS S7 und Arbeitsprozesse analytisches Denken und einen starken Fokus erfordern, was ein großer Teil des Schreibens von strukturiertem Code ist. Ich habe auch gelernt, dass die Zusammenarbeit mit anderen Entwicklern und das Lösen von Problemen in einem Team eine der lohnendsten Erfahrungen ist, die ich je gemacht habe.",
-  "placeholder3": "Ein interessanter Aspekt ist die A11Y (Accessibility) und die damit verbundene Barrierefreiheit. Screen Reader Optimierung und Usability Tests. Damit einhergehend die UI/UX Pattern und erstellen von UI Komponenten. Sowie das einbinden von UI Libraries wie Angular Material etc zusammen mit Theming.",
-  "placeholder4": "Frameworks wie Angular sind mir nicht fremd und ich habe bereits einige Erfahrungen in der Entwicklung von Single Page Applications gesammelt. Wichtig ist dabei wie im Bogensport immer den Fokus und das Ziel vor Augen zu haben. Um dem Endkunden eine optimale Experience zu bieten."
+      "Imprint": "_impressum",
+      "Privacy": "_datenschutz"
+    },
+    "Privacy": "_datenschutz",
+    "Imprint": "_impressum"
+  }
 }
-
