@@ -104,7 +104,7 @@ export const vscode = {
 export const nightowl = {
     '--primary-color': '#46a9fa',
     '--primary-contrast-color': '#0d1017',
-    '--primary-txt-color': '#0E293F',
+    '--primary-txt-color': '#034072',
     '--primary-txt-contrast-color': '#0d1017',
 
     '--secondary-color': '#034072',
@@ -167,7 +167,7 @@ export const unleashed = {
     '--surface-contrast-color': '#9FA9BD',
     '--surface-contrast-transparent-color': '#9FA9BD44',
     '--surface-txt-color': '#FF6E48',
-    '--surface-txt-contrast-color': '#00EDFF',
+    '--surface-txt-contrast-color': '#9FA9BD',
     '--surface-txt-contrast-transparent-color': '#9FA9BD44',
 
     '--background-color': '#13161B',

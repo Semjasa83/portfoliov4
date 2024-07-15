@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BackgroundComponent } from '../../utility/background/background.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgOptimizedImage } from "@angular/common";
+import { ThemeService } from '../../utility/services/theme/theme.service';
 
 @Component({
   selector: 'app-about',
@@ -15,5 +16,9 @@ import { NgOptimizedImage } from "@angular/common";
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
+
+  constructor(private themeService: ThemeService) { 
+    this.themeService.checkTheme();
+}
 
 }

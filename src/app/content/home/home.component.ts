@@ -29,7 +29,7 @@ export class HomeComponent implements AfterViewInit{
     @ViewChild('bottomText') bottomText: ElementRef | undefined;
 
     constructor(private themeService: ThemeService) { 
-        this.checkTheme();
+        this.themeService.checkTheme();
     }
   
     ngAfterViewInit() {
@@ -38,15 +38,15 @@ export class HomeComponent implements AfterViewInit{
         }
     }
 
-    private async checkTheme() {
-        let getTheme = localStorage.getItem('theme');
-        if (getTheme === null) {
-            localStorage.setItem('theme', 'ayu');
-        } else {
-            this.themeService.setTheme(getTheme as ThemeName);
-        }
-        console.log('Theme checked');
-    }
+    // public async checkTheme() {
+    //     let getTheme = localStorage.getItem('theme');
+    //     if (getTheme === null) {
+    //         localStorage.setItem('theme', 'ayu');
+    //     } else {
+    //         this.themeService.setTheme(getTheme as ThemeName);
+    //     }
+    //     console.log('Theme checked');
+    // }
 
     private async firstAnimation() {
         if (this.topText) {

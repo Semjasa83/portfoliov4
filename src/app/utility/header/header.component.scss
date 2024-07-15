@@ -34,11 +34,11 @@
     min-width: 8rem;
     width: fit-content;
 
-    &:hover {
-      cursor: pointer;
-      border-top: 2px solid $primary-color;
-      background-color: $surface-contrast-transparent-color;
-    }
+    // &:hover {
+    //   cursor: pointer;
+    //   border-top: 2px solid $primary-color;
+    //   background-color: $surface-contrast-transparent-color;
+    // }
 
     .icon-headline-wrapper {
       height: 1.25rem;
@@ -82,6 +82,7 @@
 }
 
 .active {
+  cursor: default;
   border-top: 2px solid $primary-color !important;
   background-color: $surface-contrast-transparent-color;
 }

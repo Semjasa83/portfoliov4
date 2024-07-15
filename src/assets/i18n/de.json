@@ -33,7 +33,10 @@
       "ContactPhone": "+49 172 8984502",
       "ButtonSend": "Send"
     },
-    "Projects": {},
+    "Projects": {
+      "BackgroundTop": "schau dir meine ",
+      "BackgroundBottom": "Projekte & GitHub an"
+    },
     "Settings": {
       "BackgroundTop": "wähle dein ",
       "BackgroundBottom": "Design & Sprache",

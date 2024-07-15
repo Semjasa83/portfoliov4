@@ -20,7 +20,9 @@ import { BackgroundComponent } from '../../utility/background/background.compone
 
 export class SettingsComponent {
 
-  constructor(private themeService: ThemeService) { }
+  constructor(private themeService: ThemeService) {
+    this.themeService.checkTheme();
+   }
 
   public setTheme(theme: ThemeName) {
     if (theme !== null) {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from '../../utility/services/theme/theme.service';
 
 @Component({
   selector: 'app-imprint',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './imprint.component.scss'
 })
 export class ImprintComponent {
+  constructor(private themeService: ThemeService) { 
+    this.themeService.checkTheme();
+}
 
 }

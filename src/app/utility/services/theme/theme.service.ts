@@ -27,4 +27,13 @@ export class ThemeService {
     return result;
   }
 
+  public async checkTheme() {
+    let getTheme = localStorage.getItem('theme');
+    if (getTheme === null) {
+        localStorage.setItem('theme', 'ayu');
+    } else {
+        this.setTheme(getTheme as ThemeName);
+    }
+    console.log('Theme checked');
+}
 }

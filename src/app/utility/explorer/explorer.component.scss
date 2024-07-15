@@ -55,11 +55,10 @@
   flex-direction: column;
   width: 100%;
   color: $surface-txt-contrast-transparent-color;
-  border-left: 1px solid $surface-color;
 
   .item-explorer {
     height: 1.25rem;
-    width: 100%;
+    // width: 100%;
     display: flex;
     padding: 0.5rem 0 0.5rem 0;
 

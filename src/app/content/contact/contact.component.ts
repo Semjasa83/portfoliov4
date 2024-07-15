@@ -3,6 +3,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from "../../utility/button/button.component";
 import { BackgroundComponent } from "../../utility/background/background.component";
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ThemeService } from '../../utility/services/theme/theme.service';
 
 @Component({
     selector: 'app-contact',
@@ -18,6 +19,9 @@ import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } 
 })
 
 export class ContactComponent {
+    constructor(private themeService: ThemeService) { 
+        this.themeService.checkTheme();
+    }
 
 
     form!: FormGroup;
