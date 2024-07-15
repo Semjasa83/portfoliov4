@@ -102,9 +102,9 @@ export const vscode = {
 }
 
 export const nightowl = {
-    '--primary-color': '#034072',
+    '--primary-color': '#46a9fa',
     '--primary-contrast-color': '#0d1017',
-    '--primary-txt-color': '#aad94c',
+    '--primary-txt-color': '#0E293F',
     '--primary-txt-contrast-color': '#0d1017',
 
     '--secondary-color': '#034072',
@@ -117,7 +117,7 @@ export const nightowl = {
     '--surface-contrast-transparent-color': '#5f7e97',
     '--surface-txt-color': '#131822',
     '--surface-txt-contrast-color': '#bfbdb6',
-    '--surface-txt-contrast-transparent-color': '#bfbdb644',
+    '--surface-txt-contrast-transparent-color': '#1d598acc',
 
     '--background-color': '#011627',
     '--background-contrast-color': '#d6deeb',
@@ -141,10 +141,10 @@ export const nightowl = {
 
     '--secondary-pulse-color': '#39bae6aa',
 
-    '--button-color': '#aad94c',
+    '--button-color': '#1d598a',
     '--button-contrast-color': '#0d1017',
-    '--button-txt-color': '#aad94c',
-    '--button-txt-contrast-color': '#0d1017',
+    '--button-txt-color': '#1d598a',
+    '--button-txt-contrast-color': '#0E293F',
 
     '--button-hover-color': '#0d1017',
     '--button-hover-contrast-color': '#bfbdb6',
