@@ -44,10 +44,13 @@
       "BackgroundBottom": "Theme & Language",
       "Themes": "Theme",
       "Languages": "Language",
-      "Ayu": "AyuDark",
-      "VsCode": "VsCode",
-      "Night": "NightOwl",
-      "Unleashed": "Unleashed"
+      "ayu": "AyuDark",
+      "vscode": "VsCode",
+      "nightowl": "NightOwl",
+      "unleashed": "Unleashed",
+      "de": "German",
+      "en": "English",
+      "it": "Italian"
     }
   },
   "Utility": {

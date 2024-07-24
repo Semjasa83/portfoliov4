@@ -14,4 +14,14 @@ export class TranslationService {
   public setLanguage(lang: string) {
     this.translate.use(lang);
   }
+
+  public getCurrentLanguage() {
+    let getCurrentLanguage = localStorage.getItem('lang');
+    if (getCurrentLanguage === null) {
+      localStorage.setItem('lang', 'en');
+    } else {
+      this.setLanguage(getCurrentLanguage);
+    }
+    console.log('Language checked');
+  }
 }

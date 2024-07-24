@@ -4,38 +4,20 @@
 
     <section class="settings-section">
         <span class="setting-headline">{{ 'Main.Settings.Themes' | translate }}:</span>
+        @for (theme of themes; track themes) {
         <div class="btn-wrapper">
-            <app-button [text]="'Main.Settings.Ayu' | translate" [outlined]="false" (click)="setThemeFromString('ayu')"></app-button>
+            <app-button [text]="'Main.Settings.' + theme | translate" [outlined]="false" (click)="setThemeFromString(theme)" [active]="theme === activeTheme"></app-button>
         </div>
-        <div class="btn-wrapper">
-            <app-button [text]="'Main.Settings.VsCode' | translate" [outlined]="false" (click)="setThemeFromString('vscode')"></app-button>
-        </div>
-        <div class="btn-wrapper">
-            <app-button [text]="'Main.Settings.Night' | translate" [outlined]="false" (click)="setThemeFromString('nightowl')"></app-button>
-        </div>
-        <div class="btn-wrapper">
-            <app-button [text]="'Main.Settings.Unleashed' | translate" [outlined]="false" (click)="setThemeFromString('unleashed')"></app-button>
-        </div>
-
+        }
     </section>
+
     <section class="settings-section">
         <span class="setting-headline">{{ 'Main.Settings.Languages' | translate }}:</span>
+        @for (language of languages; track languages) {
         <div class="btn-wrapper">
-            <app-button [text]="'Main.Settings.Ayu' | translate" [outlined]="true" (click)="setThemeFromString('ayu')"></app-button>
+            <app-button [text]="'Main.Settings.' + language | translate" [outlined]="true" (click)="setLanguage(language)" [active]="language === activeLanguage"></app-button>
         </div>
-        <div class="btn-wrapper">
-            <app-button [text]="'Main.Settings.VsCode' | translate" [outlined]="true" (click)="setThemeFromString('vscode')"></app-button>
-        </div>
-        <div class="btn-wrapper">
-            <app-button [text]="'Main.Settings.Night' | translate" [outlined]="true" (click)="setThemeFromString('nightowl')"></app-button>
-        </div>
-        <div class="btn-wrapper">
-            <app-button [text]="'Main.Settings.Unleashed' | translate" [outlined]="true" (click)="setThemeFromString('unleashed')"></app-button>
-        </div>
+        }
     </section>
-    <!-- <select (change)="setTheme($any($event.target).value)">
-        <option value="ayu">Ayu</option>
-        <option value="vscode">VsCode</option>
-    </select> -->
 
 </section>

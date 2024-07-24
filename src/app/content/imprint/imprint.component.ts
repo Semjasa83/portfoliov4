@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ThemeService } from '../../utility/services/theme/theme.service';
+import { TranslationService } from '../../utility/services/translation/translation.service';
 
 @Component({
   selector: 'app-imprint',
@@ -9,8 +10,9 @@ import { ThemeService } from '../../utility/services/theme/theme.service';
   styleUrl: './imprint.component.scss'
 })
 export class ImprintComponent {
-  constructor(private themeService: ThemeService) { 
+  constructor(private themeService: ThemeService, private translationService: TranslationService) { 
     this.themeService.checkTheme();
+    this.translationService.getCurrentLanguage();
 }
 
 }

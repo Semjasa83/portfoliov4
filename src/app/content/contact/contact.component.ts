@@ -4,6 +4,7 @@ import { ButtonComponent } from "../../utility/button/button.component";
 import { BackgroundComponent } from "../../utility/background/background.component";
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ThemeService } from '../../utility/services/theme/theme.service';
+import { TranslationService } from '../../utility/services/translation/translation.service';
 
 @Component({
     selector: 'app-contact',
@@ -19,8 +20,9 @@ import { ThemeService } from '../../utility/services/theme/theme.service';
 })
 
 export class ContactComponent {
-    constructor(private themeService: ThemeService) { 
+    constructor(private themeService: ThemeService, private translationService: TranslationService) { 
         this.themeService.checkTheme();
+        this.translationService.getCurrentLanguage();
     }
 
 

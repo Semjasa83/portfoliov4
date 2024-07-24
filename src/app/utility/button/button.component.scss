@@ -29,6 +29,10 @@
   &:hover {
     cursor: pointer;
   }
+  .isActive {
+    border: 2px solid $secondary-color !important;
+    color: $secondary-color !important;
+  }
 }
 
 .filled {
@@ -41,6 +45,7 @@
     color: $button-txt-hover-contrast-color;
   }
 }
+
 .outlined {
   background-color: $button-contrast-color;
   border: 2px solid $button-color;
@@ -51,3 +56,14 @@
     color: $button-txt-hover-color;
   }
 }
+
+// .isActive :has(.filled) {
+//   background-color: $secondary-color !important;
+//   border: 2px solid $secondary-color !important;
+//   color: $secondary-contrast-color !important;
+// }
+
+// .isActive :has(.outlined) {
+//   border: 2px solid $secondary-color !important;
+//   color: $secondary-color !important;
+// }

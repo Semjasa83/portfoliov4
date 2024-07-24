@@ -7,6 +7,7 @@ import { BackgroundComponent } from "../../utility/background/background.compone
 import { RouterLink } from '@angular/router';
 import { ThemeService } from '../../utility/services/theme/theme.service';
 import { ThemeName } from '../../utility/services/theme/theming/theme.enum';
+import { TranslationService } from '../../utility/services/translation/translation.service';
 
 @Component({
     selector: 'app-home',
@@ -28,25 +29,16 @@ export class HomeComponent implements AfterViewInit{
     @ViewChild('topText') topText: ElementRef | undefined;
     @ViewChild('bottomText') bottomText: ElementRef | undefined;
 
-    constructor(private themeService: ThemeService) { 
+    constructor(private themeService: ThemeService, private translationService: TranslationService) { 
         this.themeService.checkTheme();
-    }
+        this.translationService.getCurrentLanguage();
+      }
   
     ngAfterViewInit() {
         if (this.topText) {
             this.firstAnimation();
         }
     }
-
-    // public async checkTheme() {
-    //     let getTheme = localStorage.getItem('theme');
-    //     if (getTheme === null) {
-    //         localStorage.setItem('theme', 'ayu');
-    //     } else {
-    //         this.themeService.setTheme(getTheme as ThemeName);
-    //     }
-    //     console.log('Theme checked');
-    // }
 
     private async firstAnimation() {
         if (this.topText) {

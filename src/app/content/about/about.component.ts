@@ -3,6 +3,7 @@ import { BackgroundComponent } from '../../utility/background/background.compone
 import { TranslateModule } from '@ngx-translate/core';
 import { NgOptimizedImage } from "@angular/common";
 import { ThemeService } from '../../utility/services/theme/theme.service';
+import { TranslationService } from '../../utility/services/translation/translation.service';
 
 @Component({
   selector: 'app-about',
@@ -17,8 +18,9 @@ import { ThemeService } from '../../utility/services/theme/theme.service';
 })
 export class AboutComponent {
 
-  constructor(private themeService: ThemeService) { 
+  constructor(private themeService: ThemeService, private translationService: TranslationService) { 
     this.themeService.checkTheme();
-}
+    this.translationService.getCurrentLanguage();
+  }
 
 }

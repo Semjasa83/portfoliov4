@@ -20,6 +20,7 @@ export class ButtonComponent {
   @Input() bgrColor?: string;
   @Input() txtColor?: string;
   @Input() outlined?: boolean = false;
+  @Input() active?: boolean = false;
   @Output() buttonClick: EventEmitter<void> | undefined;
 
   onSubmit() {
