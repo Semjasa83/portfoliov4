@@ -1,6 +1,6 @@
 
 export const ayu = {
-    '--primary-color': '#aad94c',
+    '--primary-color': '#39bae6',
     '--primary-contrast-color': '#0d1017',
     '--primary-txt-color': '#aad94c',
     '--primary-txt-contrast-color': '#0d1017',
@@ -51,14 +51,14 @@ export const ayu = {
 }
 
 export const vscode = {
-    '--primary-color': '#39bae6',
+    '--primary-color': '#ffb454',
     '--primary-contrast-color': '#0d1017',
     '--primary-txt-color': '#39bae6',
     '--primary-txt-contrast-color': '#0d1017',
 
-    '--secondary-color': '#6caddf',
+    '--secondary-color': '#ffb454',
     '--secondary-contrast-color': '#0d1017',
-    '--secondary-txt-color': '#6caddf',
+    '--secondary-txt-color': '#ffb454',
     '--secondary-txt-contrast-color': '#0d1017',
 
     '--surface-color': '#181818',
@@ -104,10 +104,10 @@ export const vscode = {
 export const nightowl = {
     '--primary-color': '#46a9fa',
     '--primary-contrast-color': '#0d1017',
-    '--primary-txt-color': '#034072',
+    '--primary-txt-color': '#46a9fa',
     '--primary-txt-contrast-color': '#0d1017',
 
-    '--secondary-color': '#034072',
+    '--secondary-color': '#46a9fa',
     '--secondary-contrast-color': '#0d1017',
     '--secondary-txt-color': '#034072',
     '--secondary-txt-contrast-color': '#0d1017',
@@ -159,7 +159,7 @@ export const unleashed = {
     '--primary-txt-contrast-color': '#9FA9BD',
 
     '--secondary-color': '#39bae6',
-    '--secondary-contrast-color': '#9FA9BD',
+    '--secondary-contrast-color': '#1B1C21',
     '--secondary-txt-color': '#63F3AB',
     '--secondary-txt-contrast-color': '#9FA9BD',
 
@@ -199,6 +199,6 @@ export const unleashed = {
 
     '--button-hover-color': '#1B1C21',
     '--button-hover-contrast-color': '#39bae6',
-    '--button-txt-hover-color': '#39bae6',
+    '--button-txt-hover-color': '#9FA9BD',
     '--button-txt-hover-contrast-color': '#1B1C21'
 }

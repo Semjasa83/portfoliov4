@@ -29,10 +29,6 @@
   &:hover {
     cursor: pointer;
   }
-  .isActive {
-    border: 2px solid $secondary-color !important;
-    color: $secondary-color !important;
-  }
 }
 
 .filled {
@@ -57,13 +53,13 @@
   }
 }
 
-// .isActive :has(.filled) {
-//   background-color: $secondary-color !important;
-//   border: 2px solid $secondary-color !important;
-//   color: $secondary-contrast-color !important;
-// }
+.isActive:not(.outlined) {
+  background-color: $secondary-color;
+  border: 2px solid $secondary-color;
+  color: $secondary-contrast-color;
+}
 
-// .isActive :has(.outlined) {
-//   border: 2px solid $secondary-color !important;
-//   color: $secondary-color !important;
-// }
+.isActive:not(.filled) {
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+}

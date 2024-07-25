@@ -60,8 +60,9 @@ export class SettingsComponent {
   }
 
   public setLanguage(lang: string) {
-    this.translate.use(lang);
     localStorage.setItem('lang', lang);
+    this.translate.use(lang);
+    this.activeLanguage = lang;
   }
 
 }

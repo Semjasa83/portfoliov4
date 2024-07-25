@@ -20,7 +20,7 @@
 }
 
 .active {
-  color: $primary-color;
+  color: $primary-txt-color;
   border-left: 1px solid $primary-color !important;
 }
 
@@ -95,6 +95,10 @@ a {
       color: $surface-contrast-color;
     }
   }
+}
+
+.settings:not(.active) {
+  animation: unset;
 }
 
 
