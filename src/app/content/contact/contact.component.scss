@@ -116,3 +116,12 @@
     }
   }
 }
+
+@media (min-width: 1400px) {
+  :host {
+    align-items: center;
+  }
+  .front-content {
+    max-width: 80%;
+  }
+}

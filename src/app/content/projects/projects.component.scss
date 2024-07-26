@@ -96,3 +96,19 @@ app-background {
     z-index: 1;
   }
   
+
+  @media (min-width: 90rem) {
+    :host {
+      align-items: center;
+    }
+    .project-wrapper {
+      max-width: 80%;
+    }
+  }
+
+  @media (max-width: 64rem) {
+    .project-wrapper {
+        .project-frame {
+            flex-direction: column;
+        }
+  }}

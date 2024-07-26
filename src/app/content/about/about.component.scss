@@ -124,3 +124,12 @@ app-background {
   height: 100%;
   z-index: 1;
 }
+
+@media (min-width: 1400px) {
+  :host {
+    align-items: center;
+  }
+  .content-wrapper {
+    max-width: 80%;
+  }
+}
