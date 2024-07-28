@@ -1,0 +1,18 @@
+{
+    "portfolio": {
+        "title": "Portfolio",
+        "description": "Main.Projects.PortfolioDescription",
+        "image": "../../../assets/Images/portfolio.jpg",
+        "url": "Projects.PortfolioDescription",
+        "github": "https://github.com/Semjasa83/portfoliov4",
+        "technologies": ["Angular17", "TypeScript", "HTML", "SCSS" ]
+    },
+    "pokedex": {
+        "title": "Pokedex",
+        "description": "Main.Projects.PokedexDescription",
+        "image": "../../../assets/Images/pokedex.jpg",
+        "url": "",
+        "github": "https://github.com/Semjasa83/PokedexV3",
+        "technologies": ["Vue3", "JavaScript", "HTML", "SCSS", "CSS"]
+    }
+}

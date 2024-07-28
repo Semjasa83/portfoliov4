@@ -29,7 +29,7 @@
       "Subject": "Subject",
       "Message": "Message",
       "Phone": "Phone",
-      "ContactEmail": "MarceldeZanna@gmail.com",
+      "ContactEmail": "MarceldeZanna@yahoo.de",
       "ContactPhone": "+49 172 8984502",
       "ButtonSend": "Send"
     },
@@ -37,7 +37,9 @@
       "BackgroundTop": "check out my ",
       "BackgroundBottom": "Projects & GitHub",
       "TestButton": "Test Button",
-      "ButtonGitHub": "GitHub"
+      "ButtonGitHub": "GitHub",
+      "PortfolioDescription": "This is my portfolio. It is a single page application created with Angular 17, HTML, SCSS, and TypeScript. It is a responsive and modern web application that showcases my skills and projects.",
+      "PokedexDescription": "A Pokemon database from a REST API, created in Vue3, HTML, CSS, SCSS and Javascript."
     },
     "Settings": {
       "BackgroundTop": "set your ",

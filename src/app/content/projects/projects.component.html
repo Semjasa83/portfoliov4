@@ -1,21 +1,28 @@
 <app-background [lowerText]="'Main.Projects.BackgroundBottom'" [upperText]="'Main.Projects.BackgroundTop'"></app-background>
 
 <div class="project-wrapper">
+    @for (p of projects; track projects) {
     <div class="project-frame">
         <div class="project-img-wrapper">
-            <div class="project-img"></div>
+            <div class="project-img">
+                <img src="{{p.image}}" alt="{{p.title}}">
+            </div>
         </div>
         <div class="project-content">
             <div class="project-links">
-                <a href="https://github.com/Semjasa83" target="_blank">
+                <a href="{{p.github}}" target="_blank">
                     <i class="fa-brands fa-github icon-fa"></i>
                 </a>
-                <app-button [icon]=""></app-button>
+                <a href="{{p.github}}" target="_blank">
+                    <i class="fa-regular fa-circle-play icon-fa"></i>
+                </a>
             </div>
             <div class="project-txt">
-                <span>testtext</span>
-                <span>TechSTACK</span>
+                <span class="title">{{p.title}}</span>
+                <span>{{p.description | translate}}</span>
+                <span>{{p.technologies}}</span>
             </div>
         </div>
     </div>
+    }
 </div>
