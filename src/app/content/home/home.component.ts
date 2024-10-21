@@ -1,4 +1,4 @@
-import { SettingsComponent } from './../settings/settings.component';
+import { SettingsComponent } from '../settings/settings.component';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { NgFor } from "@angular/common";
 import { TranslateModule } from "@ngx-translate/core";
@@ -6,7 +6,6 @@ import { ButtonComponent } from "../../utility/button/button.component";
 import { BackgroundComponent } from "../../utility/background/background.component";
 import { RouterLink } from '@angular/router';
 import { ThemeService } from '../../utility/services/theme/theme.service';
-import { ThemeName } from '../../utility/services/theme/theming/theme.enum';
 import { TranslationService } from '../../utility/services/translation/translation.service';
 
 @Component({
@@ -29,11 +28,11 @@ export class HomeComponent implements AfterViewInit{
     @ViewChild('topText') topText: ElementRef | undefined;
     @ViewChild('bottomText') bottomText: ElementRef | undefined;
 
-    constructor(private themeService: ThemeService, private translationService: TranslationService) { 
+    constructor(private themeService: ThemeService, private translationService: TranslationService) {
         this.themeService.checkTheme();
         this.translationService.getCurrentLanguage();
       }
-  
+
     ngAfterViewInit() {
         if (this.topText) {
             this.firstAnimation();
