@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ButtonComponent } from "../../utility/button/button.component";
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ThemeService } from '../../utility/services/theme/theme.service';
 import { ThemeName } from '../../utility/services/theme/theming/theme.enum';
 import { BackgroundComponent } from '../../utility/background/background.component';
-import { HttpClient } from '@angular/common/http';
 import { TranslationService } from '../../utility/services/translation/translation.service';
 
 @Component({
@@ -32,6 +31,7 @@ export class SettingsComponent {
     this.translationService.getCurrentLanguage();
     this.activeLanguage = this.translate.currentLang;
     this.activeTheme = String(localStorage.getItem('theme'));
+    this.activeLanguage = String(localStorage.getItem('lang'));
    }
 
   public setTheme(theme: ThemeName) {
@@ -64,5 +64,4 @@ export class SettingsComponent {
     this.translate.use(lang);
     this.activeLanguage = lang;
   }
-
 }

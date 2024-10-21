@@ -125,3 +125,20 @@
     max-width: 80%;
   }
 }
+
+@media (max-width: 1024px) {
+  .front-content {
+    flex-direction: column-reverse;
+
+    .contact-form {
+      height: fit-content;
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .contact-info {
+      height: fit-content;
+      margin-bottom: 3rem;
+    }
+  }
+}

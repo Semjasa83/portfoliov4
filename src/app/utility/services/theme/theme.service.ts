@@ -1,4 +1,4 @@
-import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
+import { Injectable } from '@angular/core';
 import * as themes from './theming/theme.class';
 import { ThemeName } from './theming/theme.enum';
 
@@ -7,7 +7,7 @@ import { ThemeName } from './theming/theme.enum';
 })
 export class ThemeService {
 
-  constructor(private rendererFactory: RendererFactory2) { }
+  constructor() { }
 
   public setTheme(theme: ThemeName) {
     const themeClass = themes[theme];
