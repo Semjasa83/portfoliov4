@@ -67,5 +67,10 @@
     font-family: fira code, serif;
 }
 
+@media (max-width: 768px) {
+  .copyright {
+    scale: 0.7;
+  }
+}
 
 
