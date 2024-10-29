@@ -1,4 +1,3 @@
-import {SettingsComponent} from '../settings/settings.component';
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {NgFor} from "@angular/common";
 import {TranslateModule} from "@ngx-translate/core";
@@ -19,7 +18,6 @@ import {TranslationService} from '../../utility/services/translation/translation
     ButtonComponent,
     BackgroundComponent,
     RouterLink,
-    SettingsComponent
   ]
 })
 

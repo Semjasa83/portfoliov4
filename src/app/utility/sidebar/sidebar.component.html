@@ -34,17 +34,12 @@
     contrast
   </span>
 
-<!--  <div class="settings-wrapper" routerLink="settings" routerLinkActive="active">-->
-<!--        <span class="material-symbols-outlined settings">-->
-<!--            contrast-->
-<!--        </span>-->
-<!--  </div>-->
 </div>
 
-@if(toggleTheme){
+@if (toggleTheme) {
   <app-theme-dialog></app-theme-dialog>
 }
 
-@if(toggleLanguage) {
+@if (toggleLanguage) {
   <app-language-dialog></app-language-dialog>
 }
