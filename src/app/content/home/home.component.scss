@@ -39,6 +39,11 @@
     }
   }
 
+  .text-alignment {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .front-button-wrapper {
     display: flex;
     flex-direction: row;
@@ -91,10 +96,6 @@ app-background {
   .front-content {
     //overflow-x: hidden;
     scale: 0.8;
-  }
-
-  .front-txt-bottom {
-    text-wrap: auto;
   }
 
 }
