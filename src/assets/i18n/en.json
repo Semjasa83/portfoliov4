@@ -39,9 +39,9 @@
       "BackgroundBottom": "Projects & GitHub",
       "TestButton": "Test Button",
       "ButtonGitHub": "GitHub",
-      "PortfolioDescription": "This is my portfolio. It is a single page application created with Angular 17, HTML, SCSS, and TypeScript. It is a responsive and modern web application that showcases my skills and projects.",
-      "PokedexDescription": "A Pokemon database from a REST API, created in Vue3, HTML, CSS, SCSS and Javascript.",
-      "JoinDescription" : "Ticketboard with Contactlist and Login, with Rest-Api and Backend. Created with Angular 18 and Python Django",
+      "PortfolioDescription": "This is my portfolio. It is a single page application. It is a responsive and modern web application that showcases my skills and projects.",
+      "PokedexDescription": "A Pokemon database from a REST API.",
+      "JoinDescription" : "Ticketboard with Contactlist and Login, with Rest-Api and Backend.",
       "Try" : "Try it!",
       "GitHub" : "GitHub"
     },
