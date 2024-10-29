@@ -19,49 +19,49 @@ import { TranslationService } from '../../utility/services/translation/translati
 })
 
 export class SettingsComponent {
-
-  public themes: string[] = [];
-  public languages: string[] = ['de', 'en', 'it'];
-  public activeLanguage: string = '';
-  public activeTheme: string = '';
-
-  constructor(private themeService: ThemeService, private translate: TranslateService, private translationService: TranslationService) {
-    this.searchThemes();
-    this.themeService.checkTheme();
-    this.translationService.getCurrentLanguage();
-    this.activeLanguage = this.translate.currentLang;
-    this.activeTheme = String(localStorage.getItem('theme'));
-    this.activeLanguage = String(localStorage.getItem('lang'));
-   }
-
-  public setTheme(theme: ThemeName) {
-    if (theme !== null) {
-      this.themeService.setTheme(theme);
-      localStorage.setItem('theme', theme);
-      this.activeTheme = theme;
-    }
-  }
-
-  public setThemeFromString(themeStr: string) {
-    const theme = themeStr as ThemeName;
-    if (Object.values(ThemeName).includes(theme)) {
-      this.setTheme(theme);
-    } else {
-      console.warn(`Unknown Theme: ${themeStr}`);
-    }
-  }
-
-  private searchThemes() {
-    let themes = Object.values(ThemeName);
-    for (let theme of themes) {
-      this.activeTheme = theme;
-      this.themes.push(theme);
-    }
-  }
-
-  public setLanguage(lang: string) {
-    localStorage.setItem('lang', lang);
-    this.translate.use(lang);
-    this.activeLanguage = lang;
-  }
+  //
+  // public themes: string[] = [];
+  // public languages: string[] = ['de', 'en', 'it'];
+  // public activeLanguage: string = '';
+  // public activeTheme: string = '';
+  //
+  // constructor(private themeService: ThemeService, private translate: TranslateService, private translationService: TranslationService) {
+  //   this.searchThemes();
+  //   this.themeService.checkTheme();
+  //   this.translationService.getCurrentLanguage();
+  //   this.activeLanguage = this.translate.currentLang;
+  //   this.activeTheme = String(localStorage.getItem('theme'));
+  //   this.activeLanguage = String(localStorage.getItem('lang'));
+  //  }
+  //
+  // public setTheme(theme: ThemeName) {
+  //   if (theme !== null) {
+  //     this.themeService.setTheme(theme);
+  //     localStorage.setItem('theme', theme);
+  //     this.activeTheme = theme;
+  //   }
+  // }
+  //
+  // public setThemeFromString(themeStr: string) {
+  //   const theme = themeStr as ThemeName;
+  //   if (Object.values(ThemeName).includes(theme)) {
+  //     this.setTheme(theme);
+  //   } else {
+  //     console.warn(`Unknown Theme: ${themeStr}`);
+  //   }
+  // }
+  //
+  // private searchThemes() {
+  //   let themes = Object.values(ThemeName);
+  //   for (let theme of themes) {
+  //     this.activeTheme = theme;
+  //     this.themes.push(theme);
+  //   }
+  // }
+  //
+  // public setLanguage(lang: string) {
+  //   localStorage.setItem('lang', lang);
+  //   this.translate.use(lang);
+  //   this.activeLanguage = lang;
+  // }
 }

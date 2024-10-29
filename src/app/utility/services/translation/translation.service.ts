@@ -22,6 +22,5 @@ export class TranslationService {
     } else {
       this.setLanguage(getCurrentLanguage);
     }
-    console.log('Language checked');
   }
 }

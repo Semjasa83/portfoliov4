@@ -26,11 +26,11 @@
 
 
 <div class="sidebar-content-wrapper sidebar-response-two">
-  <span class="material-symbols-outlined icon">
+  <span class="material-symbols-outlined icon" (click)="toggleLanguageSelect()">
     language
   </span>
 
-  <span class="material-symbols-outlined icon">
+  <span class="material-symbols-outlined icon" (click)="toggleThemeSelect()">
     contrast
   </span>
 
@@ -39,5 +39,12 @@
 <!--            contrast-->
 <!--        </span>-->
 <!--  </div>-->
-
 </div>
+
+@if(toggleTheme){
+  <app-theme-dialog></app-theme-dialog>
+}
+
+@if(toggleLanguage) {
+  <app-language-dialog></app-language-dialog>
+}

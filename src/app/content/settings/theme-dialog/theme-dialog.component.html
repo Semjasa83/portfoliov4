@@ -1,0 +1,10 @@
+<div class="settings-dialog-wrapper" (click)="closeDialog()">
+  <section class="settings-section" click-stop-propagation>
+    <span class="setting-headline">{{ 'Main.Settings.Themes' | translate }}:</span>
+    @for (theme of themes; track themes) {
+      <div class="btn-wrapper">
+        <app-button [text]="'Main.Settings.' + theme | translate" [outlined]="false" (click)="setThemeFromString(theme)" [active]="theme === activeTheme"></app-button>
+      </div>
+    }
+  </section>
+</div>

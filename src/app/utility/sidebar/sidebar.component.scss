@@ -69,50 +69,50 @@ a {
   }
 }
 
-/* Animation */
-.settings-wrapper {
-  width: 100%;
-  border-left: 1px solid $surface-color;
-  cursor: pointer;
-  &:hover {
-    border-left: 1px solid $surface-contrast-color;
-  }
-  .settings {
-    align-items: center;
-    display: flex;
-    height: 2rem;
-    justify-content: center;
-    padding: 0.5rem 0;
-    transition: background-color 0.3s;
-    width: 99%;
-
-    color: $surface-txt-contrast-transparent-color;
-    border-radius: 50%;
-    background-color: $surface-color;
-    animation: pulse 4s ease 0s infinite normal forwards;
-    &:hover {
-      animation: none;
-      color: $surface-contrast-color;
-    }
-  }
-}
-
-.settings:not(.active) {
-  animation: unset;
-}
-
-@keyframes pulse {
-  0%,
-  50%,
-  100% {
-    color: $surface-txt-contrast-transparent-color;
-  }
-
-  25%,
-  75% {
-    color: $secondary-txt-color;
-  }
-}
+///* Animation */
+//.settings-wrapper {
+//  width: 100%;
+//  border-left: 1px solid $surface-color;
+//  cursor: pointer;
+//  &:hover {
+//    border-left: 1px solid $surface-contrast-color;
+//  }
+//  .settings {
+//    align-items: center;
+//    display: flex;
+//    height: 2rem;
+//    justify-content: center;
+//    padding: 0.5rem 0;
+//    transition: background-color 0.3s;
+//    width: 99%;
+//
+//    color: $surface-txt-contrast-transparent-color;
+//    border-radius: 50%;
+//    background-color: $surface-color;
+//    animation: pulse 4s ease 0s infinite normal forwards;
+//    &:hover {
+//      animation: none;
+//      color: $surface-contrast-color;
+//    }
+//  }
+//}
+//
+//.settings:not(.active) {
+//  animation: unset;
+//}
+//
+//@keyframes pulse {
+//  0%,
+//  50%,
+//  100% {
+//    color: $surface-txt-contrast-transparent-color;
+//  }
+//
+//  25%,
+//  75% {
+//    color: $secondary-txt-color;
+//  }
+//}
 
 @media (max-width: 768px) {
   :host {
