@@ -1,128 +1,145 @@
 @import "../../../assets/scss/variables.scss";
 
 :host {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 100%;
-    font-family: "Fira Code", sans-serif;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  font-family: "Fira Code", sans-serif;
+  position: relative;
 }
 
 .project-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  gap: 4rem;
+
+  .project-frame {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 24rem;
+  }
+
+  .project-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .project-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 85%;
+        height: 85%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .project-content {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    gap: 4rem;
 
-    .project-frame {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 24rem;
-        border: 1px solid $surface-contrast-transparent-color;
-    }
+    .project-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 25%;
+      min-width: fit-content;
+      height: fit-content;
+      gap: 2rem;
+      padding: 1rem;
 
-    .project-img-wrapper {
+      .link-wrapper {
+
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100%;
-        border: 1px solid blue;
 
-        .project-img {
+        a {
           display: flex;
           justify-content: center;
           align-items: center;
+          text-decoration: none;
+          color: $secondary-color;
+          width: fit-content;
+          padding: 0.25rem;
+          cursor: pointer;
+          border: 1px solid $secondary-color;
+          border-radius: 50%;
 
-          img {
-            width: 85%;
-            height: 85%;
-            object-fit: contain;
+          .icon-fa {
+            align-items: center;
+            display: flex;
+            height: 2rem;
+            justify-content: center;
+            transition: background-color 0.3s;
+            width: 100%;
+          }
+
+          &:hover {
+            color: $surface-txt-contrast-color;
+            cursor: pointer;
+            border: 1px solid $surface-contrast-color;
           }
         }
+
+        span {
+          margin-top: 0.25rem;
+        }
+      }
     }
 
-    .project-content {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 100%;
-
-        .project-links {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 4rem;
-            height: 100%;
-            gap: 2rem;
-            border: 1px solid purple;
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
-                color: $primary-color;
-                width: 100%;
-                cursor: pointer;
-                .icon-fa {
-                  align-items: center;
-                  display: flex;
-                  height: 2rem;
-                  justify-content: center;
-                  padding: 2rem 0;
-                  transition: background-color 0.3s;
-                  width: 100%;
-                }
-                &:hover {
-                  color: $surface-txt-contrast-color;
-                  cursor: pointer;
-                //   border-left: 1px solid $surface-txt-contrast-color;
-                }
-
-              }
-        }
-
-        .project-txt {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            gap: 1rem;
-        }
+    .project-txt {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      gap: 1rem;
+      padding: 1rem;
     }
+  }
 
 }
 
 app-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 
-  .title {
-    color: $primary-txt-color;
-  }
-  
+.title {
+  color: $primary-txt-color;
+}
 
-  @media (min-width: 90rem) {
-    :host {
-      align-items: center;
+
+@media (min-width: 90rem) {
+  :host {
+    align-items: center;
+  }
+  .project-wrapper {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 64rem) {
+  .project-wrapper {
+    .project-frame {
+      flex-direction: column;
     }
-    .project-wrapper {
-      max-width: 80%;
-    }
   }
-
-  @media (max-width: 64rem) {
-    .project-wrapper {
-        .project-frame {
-            flex-direction: column;
-        }
-  }}
+}

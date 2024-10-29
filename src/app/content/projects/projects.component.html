@@ -1,28 +1,38 @@
-<app-background [lowerText]="'Main.Projects.BackgroundBottom'" [upperText]="'Main.Projects.BackgroundTop'"></app-background>
+<app-background [lowerText]="'Main.Projects.BackgroundBottom'"
+                [upperText]="'Main.Projects.BackgroundTop'"></app-background>
 
 <div class="project-wrapper">
-    @for (p of projects; track projects) {
+  @for (p of projects; track projects) {
     <div class="project-frame">
-        <div class="project-img-wrapper">
-            <div class="project-img">
-                <img src="{{p.image}}" alt="{{p.title}}">
-            </div>
+      <div class="project-img-wrapper">
+        <div class="project-img">
+          <img src="{{p.image}}" alt="{{p.title}}">
         </div>
-        <div class="project-content">
-            <div class="project-links">
-                <a href="{{p.github}}" target="_blank">
-                    <i class="fa-brands fa-github icon-fa"></i>
-                </a>
-                <a href="{{p.github}}" target="_blank">
-                    <i class="fa-regular fa-circle-play icon-fa"></i>
-                </a>
-            </div>
-            <div class="project-txt">
-                <span class="title">{{p.title}}</span>
-                <span>{{p.description | translate}}</span>
-                <span>{{p.technologies}}</span>
-            </div>
+      </div>
+
+      <div class="project-content">
+        <div class="project-txt">
+          <span class="title">{{ p.title }}</span>
+          <span>{{ p.description | translate }}</span>
+          <span>{{ p.technologies }}</span>
         </div>
+
+        <div class="project-links">
+          <div class="link-wrapper">
+            <a href="{{p.github}}" target="_blank">
+              <i class="fa-brands fa-github icon-fa"></i>
+            </a>
+            <span>{{ 'Main.Projects.GitHub' | translate }}</span>
+          </div>
+
+          <div class="link-wrapper">
+            <a href="{{p.github}}" target="_blank">
+              <i class="fa-regular fa-circle-play icon-fa"></i>
+            </a>
+            <span>{{ 'Main.Projects.Try' | translate }}</span>
+          </div>
+        </div>
+      </div>
     </div>
-    }
+  }
 </div>

@@ -36,7 +36,14 @@
     },
     "Projects": {
       "BackgroundTop": "schau dir meine ",
-      "BackgroundBottom": "Projekte & GitHub an"
+      "BackgroundBottom": "Projekte & GitHub an",
+      "TestButton": "Test Button",
+      "ButtonGitHub": "GitHub",
+      "PortfolioDescription": "Mein Portfolio als Single Page Applikation, erstellt in Angular 17, HTML, SCSS und Typescript. Eine moderne, responsive Web Applikation mit Darstellung der Skills und Projekte.",
+      "PokedexDescription": "Ein Pokemon Deck mit Anbindung einer REST API, erstellt in VUE3, HTML, CSS, SCSS und Javascript.",
+      "JoinDescription" : "Ticketboard mit Kontaktlistenverwaltung und Login mit eigener Rest-API incl Backend. Erstellt mit Angular 18 und Python Django.",
+      "Try" : "Play Test",
+      "GitHub" : "GitHub"
     },
     "Settings": {
       "BackgroundTop": "wähle dein ",

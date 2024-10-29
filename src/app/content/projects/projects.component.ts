@@ -18,7 +18,7 @@ interface Project {
   selector: 'app-projects',
   standalone: true,
   imports: [
-    BackgroundComponent, 
+    BackgroundComponent,
     ButtonComponent,
     TranslateModule
   ],
@@ -27,7 +27,7 @@ interface Project {
 })
 export class ProjectsComponent {
 
-  public projects = 
+  public projects =
   [
     {
         "title": "Portfolio",
@@ -44,11 +44,19 @@ export class ProjectsComponent {
         "url": "",
         "github": "https://github.com/Semjasa83/PokedexV3",
         "technologies": ["Vue3", "JavaScript", "HTML", "SCSS", "CSS"]
+    },
+    {
+      "title": "Join",
+      "description": "Main.Projects.JoinDescription",
+      "image": "../../../assets/Images/pokedex.jpg",
+      "url": "",
+      "github": "https://github.com/Semjasa83/JoinV3",
+      "technologies": ["Python - Django", "Angular18", "TypeScript", "HTML", "SCSS"]
     }
   ];
 
 
-  constructor(private themeService: ThemeService, private translationService: TranslationService) { 
+  constructor(private themeService: ThemeService, private translationService: TranslationService) {
     this.themeService.checkTheme();
     this.translationService.getCurrentLanguage();
     // this.loadProjects();
@@ -57,7 +65,7 @@ export class ProjectsComponent {
   // private loadProjects(): void {
   //   this.projects.forEach(element => {
   //     console.log(element);
-      
+
   //   });
 
   // }
