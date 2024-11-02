@@ -43,7 +43,8 @@
       "PokedexDescription": "A Pokemon database from a REST API.",
       "JoinDescription" : "Ticketboard with Contactlist and Login, with Rest-Api and Backend.",
       "Try" : "Try it!",
-      "GitHub" : "GitHub"
+      "GitHub" : "GitHub",
+      "Technologies": "Build with:"
     },
     "Settings": {
       "BackgroundTop": "set your ",

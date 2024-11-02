@@ -40,5 +40,35 @@
       "HTML",
       "SCSS"
     ]
+  },
+  {
+    "title": "Memora",
+    "description": "Main.Projects.JoinDescription",
+    "image": "../../../assets/Images/pokedex.jpg",
+    "url": "",
+    "github": "https://github.com/Semjasa83/JoinV3",
+    "technologies": [
+      "Python",
+      "Django",
+      "Angular17",
+      "TypeScript",
+      "HTML",
+      "SCSS"
+    ]
+  },
+  {
+    "title": "JoinDB",
+    "description": "Main.Projects.JoinDescription",
+    "image": "../../../assets/Images/pokedex.jpg",
+    "url": "",
+    "github": "https://github.com/Semjasa83/JoinV3",
+    "technologies": [
+      "Python",
+      "Django",
+      "Angular17",
+      "TypeScript",
+      "HTML",
+      "SCSS"
+    ]
   }
 ]

@@ -1,38 +1,44 @@
 <app-background [lowerText]="'Main.Projects.BackgroundBottom'"
                 [upperText]="'Main.Projects.BackgroundTop'"></app-background>
 
-<div class="project-wrapper">
-  @for (p of projects; track projects) {
-    <div class="project-frame">
-
-      <div class="project-img-wrapper">
-        <div class="project-img">
-          <img src="{{p.image}}" alt="{{p.title}}">
-        </div>
+<div class="project-area">
+  @for (p of projects; track projects; let idx = $index) {
+  <div class="projects">
+    <div class="project-img"
+         data-aos="fade-right"
+         data-aos-easing="ease-in-sine"
+         data-aos-offset="200"
+         data-aos-delay="20"
+         data-aos-duration="600">
+      <img src="{{p.image}}" class="project-img-spacer">
+      <div class="social-media disp-fl-aln">
+        <a href="{{p.url}}" target="_blank" class="media-icon cursor disp-fl-just">
+          <i class="fa-regular fa-circle-play icon-fa"></i>
+        </a>
+        <a href="{{p.github}}" target="_blank">
+          <i class="fa-brands fa-github icon-fa"></i>
+        </a>
       </div>
+    </div>
 
-      <div class="project-content">
+    <div class="project-info"
+         data-aos="fade-left"
+         data-aos-easing="ease-in-sine"
+         data-aos-offset="200"
+         data-aos-delay="20"
+         data-aos-duration="600">
+      <div class="project-txt-section">
         <div class="project-txt">
-          <span class="title">{{ p.title }}</span>
-          <span>{{ p.description | translate }} </span>
-          <span>{{ p.technologies }} </span>
-          <div class="project-links">
-            <div class="link-wrapper">
-              <a href="{{p.github}}" target="_blank">
-                <i class="fa-brands fa-github icon-fa"></i>
-              </a>
-              <span>{{ 'Main.Projects.GitHub' | translate }}</span>
-            </div>
+          <span class="project-name">{{p.title}}</span>
+          <span class="project-info-txt">{{p.description | translate}}</span>
+        </div>
 
-            <div class="link-wrapper">
-              <a href="{{p.github}}" target="_blank">
-                <i class="fa-regular fa-circle-play icon-fa"></i>
-              </a>
-              <span>{{ 'Main.Projects.Try' | translate }}</span>
-            </div>
-          </div>
+        <div class="stack-section">
+          <span class="stack-intro">{{'Main.Projects.Technologies' | translate}}</span>
+          <span class="stack">{{p.technologies}}</span>
         </div>
       </div>
     </div>
+  </div>
   }
 </div>

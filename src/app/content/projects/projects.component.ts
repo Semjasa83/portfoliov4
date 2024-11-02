@@ -1,10 +1,11 @@
-import { TranslateModule } from '@ngx-translate/core';
-import { Component } from '@angular/core';
-import { ThemeService } from '../../utility/services/theme/theme.service';
-import { BackgroundComponent } from "../../utility/background/background.component";
-import { ButtonComponent } from "../../utility/button/button.component";
-import { TranslationService } from '../../utility/services/translation/translation.service';
-import { HttpClient } from '@angular/common/http';
+import {TranslateModule} from '@ngx-translate/core';
+import {Component} from '@angular/core';
+import {ThemeService} from '../../utility/services/theme/theme.service';
+import {BackgroundComponent} from "../../utility/background/background.component";
+import {ButtonComponent} from "../../utility/button/button.component";
+import {TranslationService} from '../../utility/services/translation/translation.service';
+import {HttpClient} from '@angular/common/http';
+import {NgClass} from "@angular/common";
 
 interface Project {
   title: string;
@@ -22,6 +23,7 @@ interface Project {
     BackgroundComponent,
     ButtonComponent,
     TranslateModule,
+    NgClass,
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
