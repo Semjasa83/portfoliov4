@@ -4,6 +4,7 @@ import { ThemeService } from '../../utility/services/theme/theme.service';
 import { BackgroundComponent } from "../../utility/background/background.component";
 import { ButtonComponent } from "../../utility/button/button.component";
 import { TranslationService } from '../../utility/services/translation/translation.service';
+import { HttpClient } from '@angular/common/http';
 
 interface Project {
   title: string;
@@ -20,53 +21,33 @@ interface Project {
   imports: [
     BackgroundComponent,
     ButtonComponent,
-    TranslateModule
+    TranslateModule,
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
 
-  public projects =
-  [
-    {
-        "title": "Portfolio",
-        "description": "Main.Projects.PortfolioDescription",
-        "image": "../../../assets/Images/portfolio.jpg",
-        "url": "Projects.PortfolioDescription",
-        "github": "https://github.com/Semjasa83/portfoliov4",
-        "technologies": ["Angular17", "TypeScript", "HTML", "SCSS" ]
-    },
-    {
-        "title": "Pokedex",
-        "description": "Main.Projects.PokedexDescription",
-        "image": "../../../assets/Images/pokedex.jpg",
-        "url": "",
-        "github": "https://github.com/Semjasa83/PokedexV3",
-        "technologies": ["Vue3", "JavaScript", "HTML", "SCSS", "CSS"]
-    },
-    {
-      "title": "Join",
-      "description": "Main.Projects.JoinDescription",
-      "image": "../../../assets/Images/pokedex.jpg",
-      "url": "",
-      "github": "https://github.com/Semjasa83/JoinV3",
-      "technologies": ["Python - Django", "Angular18", "TypeScript", "HTML", "SCSS"]
-    }
-  ];
+  public projects: Project[] = [];
 
-
-  constructor(private themeService: ThemeService, private translationService: TranslationService) {
+  constructor(private themeService: ThemeService, private translationService: TranslationService, private http: HttpClient,) {
     this.themeService.checkTheme();
     this.translationService.getCurrentLanguage();
-    // this.loadProjects();
+
   }
 
-  // private loadProjects(): void {
-  //   this.projects.forEach(element => {
-  //     console.log(element);
+  public ngOnInit() {
+    this.loadProjects();
+  }
 
-  //   });
-
-  // }
+  private loadProjects(): void {
+    this.http.get<Project[]>('assets/projects/projects.json').subscribe(
+      data => {
+        this.projects = data;
+      },
+      error => {
+        console.error('Error loading projects:', error);
+      }
+    );
+  }
 }

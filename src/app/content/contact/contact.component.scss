@@ -15,29 +15,6 @@
   z-index: 1;
 }
 
-.bgr-txt-wrapper {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  z-index: 0;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  overflow: hidden;
-
-  .bgr-txt {
-    font-size: 12rem;
-    font-weight: 700;
-    color: $surface-contrast-transparent-color;
-    opacity: 0.1;
-  }
-}
-
 .front-content {
   display: flex;
   flex-direction: row;
