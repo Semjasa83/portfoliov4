@@ -4,15 +4,10 @@
 <div class="project-area">
   @for (p of projects; track projects; let idx = $index) {
   <div class="projects">
-    <div class="project-img"
-         data-aos="fade-right"
-         data-aos-easing="ease-in-sine"
-         data-aos-offset="200"
-         data-aos-delay="20"
-         data-aos-duration="600">
+    <div class="project-img">
       <img src="{{p.image}}" class="project-img-spacer">
-      <div class="social-media disp-fl-aln">
-        <a href="{{p.url}}" target="_blank" class="media-icon cursor disp-fl-just">
+      <div class="social-media">
+        <a href="{{p.url}}" target="_blank" class="media-icon cursor">
           <i class="fa-regular fa-circle-play icon-fa"></i>
         </a>
         <a href="{{p.github}}" target="_blank">
@@ -21,12 +16,7 @@
       </div>
     </div>
 
-    <div class="project-info"
-         data-aos="fade-left"
-         data-aos-easing="ease-in-sine"
-         data-aos-offset="200"
-         data-aos-delay="20"
-         data-aos-duration="600">
+    <div class="project-info">
       <div class="project-txt-section">
         <div class="project-txt">
           <span class="project-name">{{p.title}}</span>
