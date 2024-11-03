@@ -1,7 +1,7 @@
 {
   "Main": {
     "Home": {
-      "BackgroundTop": "Web & Angular",
+      "BackgroundTop": "Frontend ",
       "BackgroundBottom": "Developer",
       "Iam": "I am",
       "Name": "Marcel de Zanna",
@@ -12,7 +12,7 @@
       "ButtonContact": "Contact Me"
     },
     "About": {
-      "BackgroundTop": "About me",
+      "BackgroundTop": "About me ",
       "BackgroundBottom": "get in touch",
       "AboutMe": "_About Me",
       "UpperIntro": "I have always been fascinated by the many ways in which programming can be used for automation. And there are no limits to creativity. As in archery, it is important to always have the focus and the goal in mind. To offer the end customer an optimal experience.",
@@ -23,7 +23,7 @@
       "SkillsExplain": "At this point my frontend development skills, which I have used in several single and group projects. More on that in the projects section."
     },
     "Contact": {
-      "BackgroundTop": "get in touch ",
+      "BackgroundTop": "get in touch, ",
       "BackgroundBottom": "contact me",
       "Name": "Name",
       "Email": "Email",

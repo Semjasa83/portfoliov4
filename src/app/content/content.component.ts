@@ -4,17 +4,19 @@ import {FooterComponent} from "../utility/footer/footer.component";
 import {HeaderComponent} from "../utility/header/header.component";
 import {RouterOutlet} from "@angular/router";
 import {SidebarComponent} from "../utility/sidebar/sidebar.component";
+import {BackgroundComponent} from "../utility/background/background.component";
 
 @Component({
   selector: 'app-content',
   standalone: true,
-    imports: [
-        ExplorerComponent,
-        FooterComponent,
-        HeaderComponent,
-        RouterOutlet,
-        SidebarComponent
-    ],
+  imports: [
+    ExplorerComponent,
+    FooterComponent,
+    HeaderComponent,
+    RouterOutlet,
+    SidebarComponent,
+    BackgroundComponent
+  ],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss'
 })
