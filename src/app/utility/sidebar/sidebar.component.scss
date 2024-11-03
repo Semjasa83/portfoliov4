@@ -69,48 +69,94 @@ a {
   }
 }
 
-/* Animation */
-.settings-wrapper {
-  width: 100%;
-  border-left: 1px solid $surface-color;
-  cursor: pointer;
-  &:hover {
-    border-left: 1px solid $surface-contrast-color;
-  }
-  .settings {
-    align-items: center;
-    display: flex;
-    height: 2rem;
-    justify-content: center;
-    padding: 0.5rem 0;
-    transition: background-color 0.3s;
-    width: 99%;
+///* Animation */
+//.settings-wrapper {
+//  width: 100%;
+//  border-left: 1px solid $surface-color;
+//  cursor: pointer;
+//  &:hover {
+//    border-left: 1px solid $surface-contrast-color;
+//  }
+//  .settings {
+//    align-items: center;
+//    display: flex;
+//    height: 2rem;
+//    justify-content: center;
+//    padding: 0.5rem 0;
+//    transition: background-color 0.3s;
+//    width: 99%;
+//
+//    color: $surface-txt-contrast-transparent-color;
+//    border-radius: 50%;
+//    background-color: $surface-color;
+//    animation: pulse 4s ease 0s infinite normal forwards;
+//    &:hover {
+//      animation: none;
+//      color: $surface-contrast-color;
+//    }
+//  }
+//}
+//
+//.settings:not(.active) {
+//  animation: unset;
+//}
+//
+//@keyframes pulse {
+//  0%,
+//  50%,
+//  100% {
+//    color: $surface-txt-contrast-transparent-color;
+//  }
+//
+//  25%,
+//  75% {
+//    color: $secondary-txt-color;
+//  }
+//}
 
-    color: $surface-txt-contrast-transparent-color;
-    border-radius: 50%;
-    background-color: $surface-color;
-    animation: pulse 4s ease 0s infinite normal forwards;
+@media (max-width: 768px) {
+  :host {
+    height: fit-content;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .sidebar-content-wrapper {
+    flex-direction: row;
+    height: 3rem;
+    width: 0;
+    border-bottom: 1px solid $surface-contrast-transparent-color;
+  }
+
+  .sidebar-response-one {
+    width: 75%;
+  }
+
+  .sidebar-response-two {
+    width: 25%;
+  }
+
+  .icon {
+    border-top: 1px solid $surface-color;
+    border-left: none !important;
     &:hover {
-      animation: none;
-      color: $surface-contrast-color;
+      border-top: 1px solid $surface-txt-contrast-color;
+      border-left: none !important;
     }
   }
-}
 
-.settings:not(.active) {
-  animation: unset;
-}
-
-
-@keyframes pulse {
-  0%,
-  50%,
-  100% {
-    color: $surface-txt-contrast-transparent-color;
+  a {
+    border-top: 1px solid $surface-color;
+    border-left: 0 !important;
+    &:hover {
+      border-top: 1px solid $surface-txt-contrast-color;
+      border-left: 0 !important;
+    }
   }
 
-  25%,
-  75% {
-    color: $secondary-txt-color;
+  .active {
+    color: $primary-txt-color;
+    border-left: 0 !important;
+    border-top: 1px solid $primary-color !important;
   }
 }

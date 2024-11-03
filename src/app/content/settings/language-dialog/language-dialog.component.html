@@ -1,0 +1,11 @@
+<div class="settings-dialog-wrapper" (click)="closeDialog()">
+  <section class="settings-section" click-stop-propagation>
+    <span class="setting-headline">{{ 'Main.Settings.Languages' | translate }}:</span>
+    @for (language of languages; track languages) {
+      <div class="btn-wrapper">
+        <app-button [text]="'Main.Settings.' + language | translate" [outlined]="false" (click)="setLanguage(language)"
+                    [active]="language === activeLanguage"></app-button>
+      </div>
+    }
+  </section>
+</div>

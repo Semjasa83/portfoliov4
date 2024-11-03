@@ -5,7 +5,7 @@ export const ayu = {
     '--primary-txt-color': '#aad94c',
     '--primary-txt-contrast-color': '#0d1017',
 
-    '--secondary-color': '#39bae6',
+    '--secondary-color': '#aad94c',
     '--secondary-contrast-color': '#0d1017',
     '--secondary-txt-color': '#39bae6',
     '--secondary-txt-contrast-color': '#0d1017',
@@ -107,7 +107,7 @@ export const nightowl = {
     '--primary-txt-color': '#46a9fa',
     '--primary-txt-contrast-color': '#0d1017',
 
-    '--secondary-color': '#46a9fa',
+    '--secondary-color': '#5f7e97',
     '--secondary-contrast-color': '#0d1017',
     '--secondary-txt-color': '#034072',
     '--secondary-txt-contrast-color': '#0d1017',

@@ -38,5 +38,14 @@
   }
 }
 
+@media (max-width: 768px) {
+  .site-wrapper{
+    flex-direction: column;
+
+    .sidebar-wrapper {
+      width: 100%;
+    }
+  }
+}
 
 

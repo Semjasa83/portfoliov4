@@ -1,13 +1,14 @@
-import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
+import {Injectable} from '@angular/core';
 import * as themes from './theming/theme.class';
-import { ThemeName } from './theming/theme.enum';
+import {ThemeName} from './theming/theme.enum';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
 
-  constructor(private rendererFactory: RendererFactory2) { }
+  constructor() {
+  }
 
   public setTheme(theme: ThemeName) {
     const themeClass = themes[theme];
@@ -30,10 +31,9 @@ export class ThemeService {
   public async checkTheme() {
     let getTheme = localStorage.getItem('theme');
     if (getTheme === null) {
-        localStorage.setItem('theme', 'ayu');
+      localStorage.setItem('theme', 'ayu');
     } else {
-        this.setTheme(getTheme as ThemeName);
+      this.setTheme(getTheme as ThemeName);
     }
-    console.log('Theme checked');
-}
+  }
 }

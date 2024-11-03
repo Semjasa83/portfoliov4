@@ -1,39 +1,45 @@
-<div class="sidebar-content-wrapper">
+<div class="sidebar-content-wrapper sidebar-response-one">
     <span class="material-symbols-outlined icon" routerLink="home" routerLinkActive="active">
         file_copy
     </span>
 
-    <span class="material-symbols-outlined icon" routerLink="about" routerLinkActive="active">
+  <span class="material-symbols-outlined icon" routerLink="about" routerLinkActive="active">
         border_color
     </span>
 
-    <span class="material-symbols-outlined icon" routerLink="projects" routerLinkActive="active">
+  <span class="material-symbols-outlined icon" routerLink="projects" routerLinkActive="active">
         data_object
     </span>
 
-    <span class="material-symbols-outlined icon" routerLink="contact" routerLinkActive="active">
+  <span class="material-symbols-outlined icon" routerLink="contact" routerLinkActive="active">
         forward_to_inbox
     </span>
 
-    <a href="https://github.com/Semjasa83" target="_blank">
-        <i class="fa-brands fa-github icon-fa"></i>
-    </a>
+  <a href="https://github.com/Semjasa83" target="_blank">
+    <i class="fa-brands fa-github icon-fa"></i>
+  </a>
 
-    <a href="https://www.linkedin.com/in/marcel-de-zanna/" target="_blank">
-      <i class="fa-brands fa-linkedin icon-fa"></i>
-    </a>
+  <a href="https://www.linkedin.com/in/marcel-de-zanna/" target="_blank">
+    <i class="fa-brands fa-linkedin icon-fa"></i>
+  </a>
 </div>
 
 
-<div class="sidebar-content-wrapper">
-    <span class="material-symbols-outlined icon" routerLink="home">
-        account_circle
-    </span>
+<div class="sidebar-content-wrapper sidebar-response-two">
+  <span class="material-symbols-outlined icon" (click)="toggleLanguageSelect()">
+    language
+  </span>
 
-    <div class="settings-wrapper" routerLink="settings" routerLinkActive="active">
-        <span class="material-symbols-outlined settings">
-            settings
-        </span>
-    </div>
+  <span class="material-symbols-outlined icon" (click)="toggleThemeSelect()">
+    contrast
+  </span>
 
 </div>
+
+@if (toggleTheme) {
+  <app-theme-dialog></app-theme-dialog>
+}
+
+@if (toggleLanguage) {
+  <app-language-dialog></app-language-dialog>
+}

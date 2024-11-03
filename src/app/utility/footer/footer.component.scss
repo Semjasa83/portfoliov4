@@ -64,40 +64,13 @@
     position: absolute;
     left: 1rem;
     font-size: 0.75rem;
-    font-family: fira code;
+    font-family: fira code, serif;
 }
 
-// .footer-icons-wrapper {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     height: 100%;
-
-//     .icons-btn {
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//         padding: 0.65rem;
-//         cursor: pointer;
-//         border-top: 1px solid $surface-color;
-//         height: 100%;
-
-//         .icon {
-//             align-items: center;
-//             cursor: pointer;
-//             display: flex;
-//             justify-content: center;
-//             margin-right: 0.5rem;
-//         }
-//         &:hover {
-//             background-color: $surface-contrast-transparent-color;
-//             color: $surface-txt-contrast-color;
-//             border-top: 1px solid $primary-color;
-//         }
-//     }
-    
-// }
-
-
+@media (max-width: 768px) {
+  .copyright {
+    scale: 0.7;
+  }
+}
 
 

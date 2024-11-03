@@ -9,7 +9,6 @@
   width: 90%;
   font-family: "Fira Code", sans-serif;
   font-style: normal;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   position: relative;
@@ -38,6 +37,11 @@
       padding-right: 1rem;
       width: fit-content;
     }
+  }
+
+  .text-alignment {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .front-button-wrapper {
@@ -77,18 +81,21 @@ app-background {
   display: flex;
   justify-content: flex-start;
   border-right: 2px solid $primary-color;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0 auto;
-  text-align: left; /* Text links ausrichten */
-  animation: typing 2s steps(200, end), blink-caret .75s step-end infinite;
+  white-space: nowrap; /* Keeps the content on a single line */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  text-align: left; /* Text ausrichten */
+  animation: typing 1s steps(200, end), blink-caret .75s step-end infinite;
 }
-
 
 .txt-invisibility {
   visibility: hidden;
 }
 
-// .txt-visibility {
-//   visibility: visible;
-// }
+@media (max-width: 768px) {
+  .front-content {
+    //overflow-x: hidden;
+    scale: 0.8;
+  }
+
+}

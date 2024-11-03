@@ -5,7 +5,8 @@
       "BackgroundBottom": "Developer",
       "Iam": "I am",
       "Name": "Marcel de Zanna",
-      "Title": "Frontend Web Developer",
+      "Title": "Frontend",
+      "TitleSecond": "Developer",
       "Description": "and this is my portfolio.",
       "ButtonWork": "View Work",
       "ButtonContact": "Contact Me"
@@ -29,7 +30,7 @@
       "Subject": "Subject",
       "Message": "Message",
       "Phone": "Phone",
-      "ContactEmail": "MarceldeZanna@gmail.com",
+      "ContactEmail": "MarceldeZanna@yahoo.de",
       "ContactPhone": "+49 172 8984502",
       "ButtonSend": "Send"
     },
@@ -37,7 +38,13 @@
       "BackgroundTop": "check out my ",
       "BackgroundBottom": "Projects & GitHub",
       "TestButton": "Test Button",
-      "ButtonGitHub": "GitHub"
+      "ButtonGitHub": "GitHub",
+      "PortfolioDescription": "This is my portfolio. It is a single page application. It is a responsive and modern web application that showcases my skills and projects.",
+      "PokedexDescription": "A Pokemon database from a REST API.",
+      "JoinDescription" : "Ticketboard with Contactlist and Login, with Rest-Api and Backend.",
+      "Try" : "Try!",
+      "GitHub" : "GitHub",
+      "Technologies": "Build with:"
     },
     "Settings": {
       "BackgroundTop": "set your ",

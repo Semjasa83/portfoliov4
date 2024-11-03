@@ -5,7 +5,8 @@
       "BackgroundBottom": "Developer",
       "Iam": "I am",
       "Name": "Marcel de Zanna",
-      "Title": "Frontend Web Developer",
+      "Title": "Frontend",
+      "TitleSecond": "Developer",
       "Description": "and this is my portfolio.",
       "ButtonWork": "Projekte",
       "ButtonContact": "Kontakt"
@@ -35,7 +36,14 @@
     },
     "Projects": {
       "BackgroundTop": "schau dir meine ",
-      "BackgroundBottom": "Projekte & GitHub an"
+      "BackgroundBottom": "Projekte & GitHub an",
+      "TestButton": "Test Button",
+      "ButtonGitHub": "GitHub",
+      "PortfolioDescription": "Mein Portfolio als Single Page Applikation. Eine moderne, responsive Web Applikation mit Darstellung der Skills und Projekte.",
+      "PokedexDescription": "Ein Pokemon Deck mit Anbindung einer REST API.",
+      "JoinDescription" : "Ticketboard mit Kontaktlistenverwaltung und Login mit eigener Rest-API incl Backend.",
+      "Try" : "Play Test",
+      "GitHub" : "GitHub"
     },
     "Settings": {
       "BackgroundTop": "wähle dein ",

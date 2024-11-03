@@ -1,10 +1,14 @@
 
   <app-background [lowerText]="'Main.Home.BackgroundBottom'" [upperText]="'Main.Home.BackgroundTop'"></app-background>
   <section class="front-content noselect">
-      <span #topText class="front-txt-top txt-invisibility">{{'Main.Home.Name' | translate}}</span>
-      <div class="front-bottom-txt-spacer">
-        <span #bottomText class="front-txt-bottom txt-invisibility">{{'Main.Home.Title' | translate}}</span>
-      </div>
+      <span #topText class="front-txt-top animation-txt txt-invisibility">{{'Main.Home.Name' | translate}}</span>
+<!--      <div class="front-bottom-txt-spacer text-alignment">-->
+<!--        <span #middleText class="front-txt-bottom animation-txt-sec txt-invisibility">{{'Main.Home.Title' | translate}}</span>-->
+<!--        <span #bottomText class="front-txt-bottom animation-txt-sec txt-invisibility">{{'Main.Home.TitleSecond' | translate}}</span>-->
+<!--      </div>-->
+    <div class="front-bottom-txt-spacer text-alignment">
+      <span #middleText class="front-txt-bottom animation-txt-sec txt-invisibility">{{'Main.Home.Title' | translate}} {{'Main.Home.TitleSecond' | translate}}</span>
+    </div>
 
     <div class="front-button-wrapper">
       <div class="btn-wrapper">

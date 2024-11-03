@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from "../../utility/button/button.component";
 import { BackgroundComponent } from "../../utility/background/background.component";
-import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ThemeService } from '../../utility/services/theme/theme.service';
 import { TranslationService } from '../../utility/services/translation/translation.service';
 
@@ -20,7 +20,7 @@ import { TranslationService } from '../../utility/services/translation/translati
 })
 
 export class ContactComponent {
-    constructor(private themeService: ThemeService, private translationService: TranslationService) { 
+    constructor(private themeService: ThemeService, private translationService: TranslationService) {
         this.themeService.checkTheme();
         this.translationService.getCurrentLanguage();
     }
@@ -38,7 +38,7 @@ export class ContactComponent {
 
     onSubmit() {
         // TODO: Use EventEmitter with form value
-        
+
         console.log(this.contactForm.value);
       }
 

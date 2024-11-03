@@ -15,29 +15,6 @@
   z-index: 1;
 }
 
-.bgr-txt-wrapper {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  z-index: 0;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  overflow: hidden;
-
-  .bgr-txt {
-    font-size: 12rem;
-    font-weight: 700;
-    color: $surface-contrast-transparent-color;
-    opacity: 0.1;
-  }
-}
-
 .front-content {
   display: flex;
   flex-direction: row;
@@ -113,6 +90,32 @@
           color: $secondary-color;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  :host {
+    align-items: center;
+  }
+  .front-content {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .front-content {
+    flex-direction: column-reverse;
+
+    .contact-form {
+      height: fit-content;
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .contact-info {
+      height: fit-content;
+      margin-bottom: 3rem;
     }
   }
 }
