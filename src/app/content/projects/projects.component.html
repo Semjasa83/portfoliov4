@@ -6,14 +6,6 @@
   <div class="projects">
     <div class="project-img">
       <img src="{{p.image}}" class="project-img-spacer">
-      <div class="social-media">
-        <a href="{{p.url}}" target="_blank" class="media-icon cursor">
-          <i class="fa-regular fa-circle-play icon-fa"></i>
-        </a>
-        <a href="{{p.github}}" target="_blank">
-          <i class="fa-brands fa-github icon-fa"></i>
-        </a>
-      </div>
     </div>
 
     <div class="project-info">
@@ -25,7 +17,18 @@
 
         <div class="stack-section">
           <span class="stack-intro">{{'Main.Projects.Technologies' | translate}}</span>
-          <span class="stack">{{p.technologies}}</span>
+          <span class="stack">{{' ' + p.technologies.join(', ')}}</span>
+        </div>
+
+        <div class="social-media">
+          <a href="{{p.url}}" target="_blank" class="media-icon cursor">
+            <i class="fa-regular fa-circle-play icon-fa"></i>
+            <span>{{'Main.Projects.Try' | translate}}</span>
+          </a>
+          <a href="{{p.github}}" target="_blank">
+            <i class="fa-brands fa-github icon-fa"></i>
+            <span>{{'Main.Projects.GitHub' | translate}}</span>
+          </a>
         </div>
       </div>
     </div>
